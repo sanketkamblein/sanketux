@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width-device-width, initial-scale-1">	
 	<title>Parallax Scrolling</title>
+	<link rel="stylesheet" href="style.css"> 
 	<style type="text/css">
 		#body{
 			
@@ -89,7 +90,7 @@
 #navbar {
   overflow: hidden;
   background-color: #333;
-
+  z-index: 1000;
 }
 
 #navbar a {
@@ -167,6 +168,11 @@
 }
 
 
+.cropping{
+   position: absolute;
+    clip: rect(0px,500px,200px,0px);
+}
+
 
 
 	</style>
@@ -176,29 +182,28 @@
 	<div class="parallax-bg">
 	
 
-<h1 id="demo" style="position:fixed;" class="readings"></h1>
-<!--<img src="nodelink.svg" style="position:relative; left: 55px; top:1200px;" width="10%" height="10%" >
--->
-<img src="My portrait.svg" style="position:relative; left:600px;  top:450px;" width="600" height="400"/>
+		<h1 id="demo" style="position:fixed;" class="readings"></h1>
+		<!--<img src="nodelink.svg" style="position:relative; left: 55px; top:1200px;" width="10%" height="10%" >
+		-->
+		<img src="My portrait.svg" style="position:relative; left:600px;  top:450px;" width="600" height="400"/>
+		<h1 id="demo1"  ></h1>
+		<h1 id="demo2"></h1>
+		<h1 id="demo3"></h1>
+		<h1 id="demo4"></h1>
+		<div class="failure">
+
+ 		<div id="navbar" >
+  		<a class="active" href="javascript:void(0)">Projects</a>
+  		<a href="javascript:void(0)">About Me</a>
+  		<a href="javascript:void(0)">Contact</a>
+		</div>
+	
 
 
-<h1 id="demo1"  ></h1>
-<h1 id="demo2"></h1>
-<h1 id="demo3"></h1>
-<h1 id="demo4"></h1>
-	<div class="failure">
+		</div><!-- /container -->
 
-<div id="navbar" >
-  <a class="active" href="javascript:void(0)">Projects</a>
-  <a href="javascript:void(0)">About Me</a>
-  <a href="javascript:void(0)">Contact</a>
-</div>
-	</div><!-- /container -->
-	</div> 
-
-	<div class="parallax-bg">
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1920 3500" style="enable-background:new 0 0 1920 3500 ; background-color: transparent;  " xml:space="preserve">
+		 viewBox="0 0 1920 3500" style="enable-background:new 0 0 1920 3500 ; background-color: transparent;  " xml:space="preserve">
 
 		<g id="Layer_1_1_" class="parallax-bg">
 		<g  id="hierarchy" class="hierarchy">
@@ -220,22 +225,22 @@
 		
 		<rect  x="388" y="2578" class="st1" width="716" height="462" style="visibility: hidden;"/>
 		<rect  x="1157" y="2578" class="st1" width="721" height="462" style="visibility: hidden;"/>
-
+		
 		<path  class="st10" d="M471,1105H59 M62,1102v741 M62,1840h1813 M1875,1839v632 M1875,2471H57 M58,2471v570"/>
-	</g>
-	<svg  id = "snake" version="1.1">
-	<polyline id="line_navig" class="st9 path parallax-bg" style="visibility:hidden" points="471,1097 60,1097 60,1355.9 119.2,1355.9 202.8,1439.5 202.8,1557.8 119.2,1641.5 
+		</g>
+		<svg  id = "snake" version="1.1">
+		<polyline id="line_navig" class="st9 path parallax-bg" style="visibility:hidden" points="471,1097 60,1097 60,1355.9 119.2,1355.9 202.8,1439.5 202.8,1557.8 119.2,1641.5 
 		60,1641.5 60,1835 1870.9,1835 1870.9,2016.7 1802.3,2016.7 1718.6,2100.4 1718.6,2218.7 1802.3,2302.4 1870.9,2302.4 1870.9,2466 
 		60.1,2466 61.2,2666.2 114.2,2666.2 197.8,2749.8 197.8,2868.2 114.2,2951.8 61.2,2951.8 61.2,3094.1 	"/>
-	</svg>
-	<g  id="line_navigate_complex" class="st11">
+		</svg>
+		<g  id="line_navigate_complex" class="st11">
 		<path class="st12" d="M469,1100H60h-3 M60,1638v197v3 M60,1097v3v261.7 M1873,1835H60 M1873,2466v-163.9 M1873,1834v1v185.9
 			 M1876,2466H56h-1 M56,2666.9V2466 M56,3036v-88.9"/>
 		<polyline class="st12" points="1871,2304.1 1801.4,2304.1 1718.3,2221 1718.3,2103.5 1801.4,2020.4 1871,2020.4 		"/>
 		<polyline class="st12" points="61.2,1358.4 120.9,1358.4 204,1441.5 204,1559 120.9,1642.1 61.2,1642.1 		"/>
 		<polyline class="st12" points="55,2665.4 113.9,2665.4 197,2749.5 197,2867 113.9,2950.1 55,2950.1 		"/>
-	</g>
-	<g id="UI" >
+		</g>
+		<g id="UI" >
 		<circle class="st8" cx="1802" cy="2020.6" r="7.8"/>
 		<circle class="st13" cx="1802" cy="2020.6" r="13.3"/>
 		<circle class="st13" cx="1719.5" cy="2103.2" r="13.3"/>
@@ -296,8 +301,8 @@
 		<line class="st14" x1="1800.4" y1="2020.3" x2="1788.7" y2="2095"/>
 		<circle class="st8" cx="1788.4" cy="2094.1" r="5.8"/>
 		<line class="st14" x1="1720.1" y1="2102.5" x2="1788.4" y2="2094.1"/>
-	</g>
-	<g  id="UX_1_">
+		</g>
+		<g  id="UX_1_">
 		<circle class="st8" cx="125" cy="1357.6" r="7.8"/>
 		<circle class="st13" cx="125" cy="1357.6" r="13.3"/>
 		<circle class="st13" cx="207.5" cy="1440.2" r="13.3"/>
@@ -353,8 +358,8 @@
 		<line class="st14" x1="162" y1="1498.7" x2="208.2" y2="1557.8"/>
 		<line class="st14" x1="126.6" y1="1357.3" x2="138.3" y2="1432"/>
 		<line class="st14" x1="206.9" y1="1439.5" x2="138.6" y2="1431.1"/>
-	</g>
-	<g  id="Product">
+		</g>
+		<g  id="Product">
 		<circle class="st8" cx="116" cy="2666.6" r="7.8"/>
 		<circle class="st13" cx="116" cy="2666.6" r="13.3"/>
 		<circle class="st13" cx="198.5" cy="2749.2" r="13.3"/>
@@ -414,10 +419,10 @@
 		<line class="st14" x1="117.6" y1="2666.3" x2="129.3" y2="2741"/>
 		<circle class="st8" cx="129.6" cy="2740.1" r="5.8"/>
 		<line class="st14" x1="197.9" y1="2748.5" x2="129.6" y2="2740.1"/>
-	</g>
-</g>
-<g  id="Layer_4" class="st15">
-	<g class="st16">
+		</g>
+		</g>
+		<g  id="Layer_4" class="st15">
+		<g class="st16">
 		<image style="overflow:visible;" width="1158" height="1151" xlink:href="CB2435D.png"  transform="matrix(1 0 0 1 -407 968)">
 		</image>
 		<g>
@@ -431,16 +436,16 @@
 			</radialGradient>
 			<ellipse class="st17" cx="172" cy="1513.9" rx="146.2" ry="143"/>
 		</g>
-	</g>
-	<g class="st18">
+		</g>
+		<g class="st18">
 		<image style="overflow:visible;" width="304" height="292" xlink:href="CB2435F.png"  transform="matrix(1 0 0 1 18 1393)">
 		</image>
 		<g>
 			
 			<text transform="matrix(1 0 0 1 135 1529.9249)" class="st19 st6 st20">UX</text>
 		</g>
-	</g>
-	<g class="st16">
+		</g>
+		<g class="st16">
 		
 			<image style="overflow:visible;" width="1158" height="1151" xlink:href="CB2435B.png"  transform="matrix(1 0 0 1 1188.2789 1624.5269)">
 		</image>
@@ -455,16 +460,16 @@
 			</radialGradient>
 			<ellipse class="st21" cx="1767.3" cy="2170.5" rx="146.2" ry="143"/>
 		</g>
-	</g>
-	<g class="st18">
+			</g>
+			<g class="st18">
 		<image style="overflow:visible;" width="305" height="292" xlink:href="CB24354.png"  transform="matrix(1 0 0 1 1623 2053)">
 		</image>
 		<g>
 			<rect x="1740.1" y="2154" class="st4" width="70" height="51.5"/>
 			<text transform="matrix(1 0 0 1 1740.0804 2190)" class="st19 st6 st20">UI</text>
 		</g>
-	</g>
-	<g class="st16">
+		</g>
+		<g class="st16">
 		
 			<image style="overflow:visible;" width="1157" height="1151" xlink:href="CB24349.png"  transform="matrix(1 0 0 1 -426.2388 2262.2161)">
 		</image>
@@ -479,18 +484,53 @@
 			</radialGradient>
 			<ellipse class="st22" cx="152" cy="2807.7" rx="146.2" ry="143"/>
 		</g>
-	</g>
-	<g class="st18">
+		</g>
+		<g class="st18">
 		<image style="overflow:visible;" width="458" height="291" xlink:href="CB2434A.png"  transform="matrix(1 0 0 1 -53 2691)">
 		</image>
-	</g>
+		</g>
+		</svg>
+
+		<div class="card-column column-0" >
+    	<div class="card card-color-0">
+      	<div class="border"></div>
+      
+      	<img src="mymic port.jpg"  class="cropping"/>
+      
+      	<h1>Mimyk</h1>
+    	</div>
+    	<div class="card card-color-2">
+      	<div class="border" ></div>
+      	<img src="LegalPad.jpg" class="cropping" />
+      	<h1>LegalPad</h1>
+    	</div>
+  		</div>
+  		<div class="card-column column-1">
+  		  <div class="card card-color-1">
+      	<div class="border"></div>
+      	<img src="sleep app.jpg" class="cropping" />
+      	<h1>nAPP</h1>
+    	</div>
+    	<div class="card card-color-3">
+      	<div class="border"></div>
+      	<img src="CAR APP.jpg" class="cropping" />
+      	<h1>Car_App</h1>
+    	</div>
+ 		 </div>
+  		<div id="cover" class="cover"></div>
+
+		<div id="open-content" class="open-content">
+  			<a href="#" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
+		  <div href="#" id="next-content" class="close-content" style="position: fixed ; top: 100px; "><h3>Next</h3></div>
+  		<img id="open-content-image" src="" />
+
+  		<div class="text" id="open-content-text">
+  		</div>
 
 
-</svg>
-
-
+		</div>
 			
-	</div>
+</div>
 	
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -601,8 +641,8 @@ var scrollpercent  = (window.innerHeight/2-line.top)/denominator;
  				document.getElementById("UX_1_").classList.add('expanding');
  				document.getElementById("UX_1_").style.visibility='visible';
  				
- 				projectrect[0].style.visibility='visible';
- 				projectrect[1].style.visibility='visible';
+ 				//projectrect[0].style.visibility='visible';
+ 				//projectrect[1].style.visibility='visible';
  				
  	flagreverse = true;
 				
@@ -646,8 +686,8 @@ var scrollpercent  = (window.innerHeight/2-line.top)/denominator;
  				document.getElementById("UI").classList.add('expanding');
  				document.getElementById("UI").style.visibility='visible';
  				
- 				projectrect[2].style.visibility='visible';
- 				projectrect[3].style.visibility='visible';
+ 				//projectrect[2].style.visibility='visible';
+ 				//projectrect[3].style.visibility='visible';
  				
  	flagreverse2 = true;
 				
@@ -718,13 +758,18 @@ var scrollpercent  = (window.innerHeight/2-line.top)/denominator;
 		});
 
 		////////
-		  if (window.pageYOffset >= sticky) {
+		  if (window.pageYOffset >= sticky && navcheck==false) {
     navbar.classList.remove("unsticky");
     navbar.classList.add("sticky");
     
-  } else {
+  } else if(window.pageYOffset < sticky && navcheck==false)  {
     navbar.classList.remove("sticky");
     navbar.classList.add("unsticky");
+  }
+  else if( navcheck== true)
+  {
+  	navbar.classList.remove("unsticky");
+    navbar.classList.add("sticky");
   }
 //document.getElementById("demo").innerHTML = window.pageYOffset+" | "+draw+" | ";
 }
@@ -734,6 +779,7 @@ var scrollpercent  = (window.innerHeight/2-line.top)/denominator;
 	
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="script.js"></script> 
 
 
 </body>
