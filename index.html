@@ -1,0 +1,951 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale-1">	
+	<title>Parallax Scrolling</title>
+	<link rel="stylesheet" href="style.css"> 
+	<style type="text/css">
+		
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p > a:hover{
+    color: #330033;
+    text-decoration:  underline;
+}
+
+
+
+		
+		
+		.content {
+			
+			background-color:#b2b2b2;
+			content: 3000px;
+		
+		}
+		.parallax-bg {
+			
+			background-image: url(background.jpg);
+			background-size:cover;
+			background-attachment:fixed; 
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+			
+		}
+
+		.parallax-bg h1 {
+                text-align: center;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 30px;
+                font-family: Arial;
+            }
+        h2{
+        	text-align: center;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 70px;
+                font-family: Arial;
+        }
+           	.st0{fill:#330033;}
+	.st1{fill:#F2F2F2;}
+	.st2{fill:#3C6698;stroke:#797979;stroke-width:2;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#797979;stroke-width:2;stroke-miterlimit:10;}
+	.st4{fill:none;}
+	.st5{fill:#797979;}
+	.st6{font-family:'Roboto-Regular';}
+	.st7{font-size:36px;}
+	.st8{fill:#FFFFFF;}
+	.st9{fill:none;stroke:#E6E6E6;stroke-width:6;stroke-miterlimit:10;}
+	.st10{display:none;fill:none;stroke:#E6E6E6;stroke-width:6;stroke-miterlimit:10;}
+	.st11{display:none;opacity:0.39;}
+	.st12{display:inline;fill:none;stroke:#E6E6E6;stroke-width:6;stroke-miterlimit:10;}
+	.st13{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st14{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st15{display:none;}
+	.st16{display:inline;opacity:0.82;}
+	.st17{fill:url(#SVGID_1_);}
+	.st18{display:inline;}
+	.st19{fill:#E6E6E6;}
+	.st20{font-size:48px;}
+	.st21{fill:url(#SVGID_2_);}
+	.st22{fill:url(#SVGID_3_);} 
+
+#UX_1_{visibility: hidden;}
+#UI{visibility: hidden;}
+#Product{visibility: hidden;}
+
+.failure{margin: 0 auto;
+    width:52%;
+    
+    text-align: center;}
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  z-index: 1000;
+}
+
+#navbar a {
+
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 3% 12%;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+.sticky {
+
+
+  top: 0;
+  width:52%;
+    text-align: center;
+  
+    position: fixed;
+}
+.unsticky{
+
+	 width:100%;
+    text-align: center;
+	position: relative;
+	top:800px;
+}
+
+  .st0{fill:none;stroke:#E6E6E6;stroke-width:10;stroke-miterlimit:10;}
+  .readings{position: fixed;}
+
+  .expanding {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: dash 0.6s linear forwards ;
+}
+@keyframes dash {
+    from {
+    opacity: 0;
+  }
+
+  to {
+  	opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+  .reversing {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  animation: dashr 0.3s linear forwards ;
+}
+@keyframes dashr {
+    from {
+    opacity: 1;
+  }
+
+  to {
+  	opacity: 0;
+    stroke-dashoffset: 100;
+  }
+}
+
+
+.cropping{
+   position: absolute;
+    clip: rect(0px,500px,200px,0px);
+}
+
+
+/*
+
+
+footer
+
+*/
+
+
+
+
+
+.footer{
+    background-color:#b2b2b2 ;
+ 
+    position: relative;
+height: 0px;
+  top: -200px;
+}
+
+
+.description{
+    position: relative;
+    margin: auto 0;
+}
+
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+    color: #fff;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #b2b2b2;
+}
+.fa-linkedin:hover {
+    background-color: #05cc46;
+}
+.fa-behance {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #b2b2b2;
+}
+.fa-behance:hover {
+    background-color: #0057ff;
+}
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #b2b2b2;
+}
+.fa-github:hover {
+    background-color: #24292e;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #b2b2b2;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #b2b2b2;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-deviantart {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #b2b2b2;
+}
+.fa-deviantart:hover {
+    background-color: #05cc46;
+}
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="content">
+	<div class="parallax-bg">
+	
+
+		<h1 id="demo" style="position:fixed;" class="readings"></h1>
+		<!--<img src="nodelink.svg" style="position:relative; left: 55px; top:1200px;" width="10%" height="10%" >
+		-->
+		<img src="My portrait.svg" style="position:relative; left:600px;  top:450px;" width="600" height="400"/>
+		<h1 id="demo1"  ></h1>
+		<h1 id="demo2"></h1>
+		<h1 id="demo3"></h1>
+		<h1 id="demo4"></h1>
+		<div class="failure">
+
+ 		<div id="navbar" >
+  		<a class="active" href="javascript:void(0)">Projects</a>
+  		<a href="about me/aboutme.html">About Me</a>
+  		<a href="Contact me/contactme.html">Contact</a>
+		</div>
+	
+
+
+		</div><!-- /container -->
+
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 1920 3500" style="enable-background:new 0 0 1920 3500 ; background-color: transparent;  " xml:space="preserve">
+
+		<g id="Layer_1_1_" class="parallax-bg">
+		<g  id="hierarchy" class="hierarchy">
+			
+			<g>
+				<g>
+					<g>
+						<path class="st9" d="M649,788v-84h318v84 M1318,413v291H967h351v84"/>
+					</g>
+				</g>
+			</g>
+		</g>
+		
+		<rect   x="384" y="1283" class="st1" width="716" height="462" style="visibility: hidden;"/>
+		<rect  x="1153" y="1283" class="st1" width="721" height="462" style="visibility: hidden;"/>
+
+		<rect  x="60" y="1923" class="st1" width="716" height="462" style="visibility: hidden;"/>
+		<rect  x="834" y="1923" class="st1" width="721" height="462" style="visibility: hidden;"/>
+		
+		<rect  x="388" y="2578" class="st1" width="716" height="462" style="visibility: hidden;"/>
+		<rect  x="1157" y="2578" class="st1" width="721" height="462" style="visibility: hidden;"/>
+		
+		<path  class="st10" d="M471,1105H59 M62,1102v741 M62,1840h1813 M1875,1839v632 M1875,2471H57 M58,2471v570"/>
+		</g>
+		<svg  id = "snake" version="1.1">
+		<polyline id="line_navig" class="st9 path parallax-bg" style="visibility:hidden" points="471,1097 60,1097 60,1355.9 119.2,1355.9 202.8,1439.5 202.8,1557.8 119.2,1641.5 
+		60,1641.5 60,1835 1870.9,1835 1870.9,2016.7 1802.3,2016.7 1718.6,2100.4 1718.6,2218.7 1802.3,2302.4 1870.9,2302.4 1870.9,2466 
+		60.1,2466 61.2,2666.2 114.2,2666.2 197.8,2749.8 197.8,2868.2 114.2,2951.8 61.2,2951.8 61.2,3094.1 	"/>
+		</svg>
+		<g  id="line_navigate_complex" class="st11">
+		<path class="st12" d="M469,1100H60h-3 M60,1638v197v3 M60,1097v3v261.7 M1873,1835H60 M1873,2466v-163.9 M1873,1834v1v185.9
+			 M1876,2466H56h-1 M56,2666.9V2466 M56,3036v-88.9"/>
+		<polyline class="st12" points="1871,2304.1 1801.4,2304.1 1718.3,2221 1718.3,2103.5 1801.4,2020.4 1871,2020.4 		"/>
+		<polyline class="st12" points="61.2,1358.4 120.9,1358.4 204,1441.5 204,1559 120.9,1642.1 61.2,1642.1 		"/>
+		<polyline class="st12" points="55,2665.4 113.9,2665.4 197,2749.5 197,2867 113.9,2950.1 55,2950.1 		"/>
+		</g>
+		<g id="UI" >
+		<circle class="st8" cx="1802" cy="2020.6" r="7.8"/>
+		<circle class="st13" cx="1802" cy="2020.6" r="13.3"/>
+		<circle class="st13" cx="1719.5" cy="2103.2" r="13.3"/>
+		<circle class="st13" cx="1719.5" cy="2103.2" r="13.3"/>
+		<circle class="st8" cx="1719.5" cy="2103.2" r="7.8"/>
+		<circle class="st13" cx="1718.8" cy="2102.5" r="13.3"/>
+		<circle class="st13" cx="1718.8" cy="2102.5" r="13.3"/>
+		<circle class="st8" cx="1718.8" cy="2102.5" r="7.8"/>
+		<circle class="st13" cx="1718.8" cy="2102.5" r="13.3"/>
+		<circle class="st13" cx="1718.8" cy="2102.5" r="13.3"/>
+		<circle class="st8" cx="1718.8" cy="2102.5" r="7.8"/>
+		<circle class="st13" cx="1802.7" cy="2304" r="13.3"/>
+		<circle class="st13" cx="1802.7" cy="2304" r="13.3"/>
+		<circle class="st8" cx="1802.7" cy="2304" r="7.8"/>
+		<circle class="st13" cx="1802" cy="2303.4" r="13.3"/>
+		<circle class="st13" cx="1802" cy="2303.4" r="13.3"/>
+		<circle class="st8" cx="1802" cy="2303.4" r="7.8"/>
+		<circle class="st13" cx="1802" cy="2303.4" r="13.3"/>
+		<circle class="st13" cx="1802" cy="2303.4" r="13.3"/>
+		<circle class="st8" cx="1802" cy="2303.4" r="7.8"/>
+		<circle class="st13" cx="1719.5" cy="2220.8" r="13.3"/>
+		<circle class="st13" cx="1719.5" cy="2220.8" r="13.3"/>
+		<circle class="st8" cx="1719.5" cy="2220.8" r="7.8"/>
+		<circle class="st13" cx="1718.8" cy="2220.2" r="13.3"/>
+		<circle class="st13" cx="1718.8" cy="2220.2" r="13.3"/>
+		<circle class="st8" cx="1718.8" cy="2220.2" r="7.8"/>
+		<circle class="st13" cx="1718.8" cy="2220.2" r="13.3"/>
+		<circle class="st13" cx="1718.8" cy="2220.2" r="13.3"/>
+		<circle class="st8" cx="1718.8" cy="2220.2" r="7.8"/>
+		<circle class="st8" cx="1727.3" cy="2012.8" r="5.8"/>
+		<line class="st14" x1="1802.7" y1="2020.6" x2="1727.3" y2="2012.8"/>
+		
+			<ellipse transform="matrix(0.7783 -0.6279 0.6279 0.7783 -934.3239 1519.8212)" class="st8" cx="1685" cy="2083" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="1718.6" y1="2101.9" x2="1687.7" y2="2084.2"/>
+		
+			<ellipse transform="matrix(0.9852 -0.1717 0.1717 0.9852 -336.5917 314.9388)" class="st8" cx="1652.4" cy="2103.4" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="1685" y1="2083.1" x2="1654.6" y2="2101.6"/>
+		<circle class="st8" cx="1670.7" cy="2053.1" r="5.8"/>
+		<line class="st14" x1="1685" y1="2088.9" x2="1672" y2="2055.7"/>
+		
+			<ellipse transform="matrix(5.876456e-02 -0.9983 0.9983 5.876456e-02 -643.7327 3779.636)" class="st8" cx="1682.5" cy="2231.2" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="1719" y1="2219" x2="1685.1" y2="2230.1"/>
+		
+			<ellipse transform="matrix(0.9106 -0.4133 0.4133 0.9106 -804.905 942.0833)" class="st8" cx="1775.1" cy="2331.5" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="1801.6" y1="2303.8" x2="1776.8" y2="2329.3"/>
+		
+			<ellipse transform="matrix(0.446 -0.895 0.895 0.446 -985.6555 2607.8337)" class="st8" cx="1613.8" cy="2100.1" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="1652.2" y1="2103.3" x2="1616.8" y2="2100.1"/>
+		
+			<ellipse transform="matrix(0.4244 -0.9055 0.9055 0.4244 -986.8741 2908.9126)" class="st8" cx="1794.5" cy="2230.7" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="1720.3" y1="2220.1" x2="1794.2" y2="2231.5"/>
+		<line class="st14" x1="1801.8" y1="2304.1" x2="1794" y2="2230.8"/>
+		
+			<ellipse transform="matrix(5.980649e-02 -0.9982 0.9982 5.980649e-02 -498.358 3794.2036)" class="st8" cx="1765" cy="2161.7" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="1794.7" y1="2234" x2="1765" y2="2161.7"/>
+		<line class="st14" x1="1765" y1="2161.7" x2="1719.2" y2="2103.4"/>
+		<line class="st14" x1="1765" y1="2161.7" x2="1718.8" y2="2220.8"/>
+		<line class="st14" x1="1800.4" y1="2020.3" x2="1788.7" y2="2095"/>
+		<circle class="st8" cx="1788.4" cy="2094.1" r="5.8"/>
+		<line class="st14" x1="1720.1" y1="2102.5" x2="1788.4" y2="2094.1"/>
+		</g>
+		<g  id="UX_1_">
+		<circle class="st8" cx="125" cy="1357.6" r="7.8"/>
+		<circle class="st13" cx="125" cy="1357.6" r="13.3"/>
+		<circle class="st13" cx="207.5" cy="1440.2" r="13.3"/>
+		<circle class="st13" cx="207.5" cy="1440.2" r="13.3"/>
+		<circle class="st8" cx="207.5" cy="1440.2" r="7.8"/>
+		<circle class="st13" cx="208.2" cy="1439.5" r="13.3"/>
+		<circle class="st13" cx="208.2" cy="1439.5" r="13.3"/>
+		<circle class="st8" cx="208.2" cy="1439.5" r="7.8"/>
+		<circle class="st13" cx="208.2" cy="1439.5" r="13.3"/>
+		<circle class="st13" cx="208.2" cy="1439.5" r="13.3"/>
+		<circle class="st8" cx="208.2" cy="1439.5" r="7.8"/>
+		<circle class="st13" cx="124.3" cy="1641" r="13.3"/>
+		<circle class="st13" cx="124.3" cy="1641" r="13.3"/>
+		<circle class="st8" cx="124.3" cy="1641" r="7.8"/>
+		<circle class="st13" cx="125" cy="1640.4" r="13.3"/>
+		<circle class="st13" cx="125" cy="1640.4" r="13.3"/>
+		<circle class="st8" cx="125" cy="1640.4" r="7.8"/>
+		<circle class="st13" cx="125" cy="1640.4" r="13.3"/>
+		<circle class="st13" cx="125" cy="1640.4" r="13.3"/>
+		<circle class="st8" cx="125" cy="1640.4" r="7.8"/>
+		<circle class="st13" cx="207.5" cy="1557.8" r="13.3"/>
+		<circle class="st13" cx="207.5" cy="1557.8" r="13.3"/>
+		<circle class="st8" cx="207.5" cy="1557.8" r="7.8"/>
+		<circle class="st13" cx="208.2" cy="1557.2" r="13.3"/>
+		<circle class="st13" cx="208.2" cy="1557.2" r="13.3"/>
+		<circle class="st8" cx="208.2" cy="1557.2" r="7.8"/>
+		<circle class="st13" cx="208.2" cy="1557.2" r="13.3"/>
+		<circle class="st13" cx="208.2" cy="1557.2" r="13.3"/>
+		<circle class="st8" cx="208.2" cy="1557.2" r="7.8"/>
+		<circle class="st8" cx="199.7" cy="1349.8" r="5.8"/>
+		<circle class="st8" cx="256.3" cy="1390.1" r="5.8"/>
+		<circle class="st8" cx="138.6" cy="1431.1" r="5.8"/>
+		
+		<ellipse transform="matrix(0.6279 -0.7783 0.7783 0.6279 -1015.1475 716.7167)" class="st8" cx="242" cy="1420" rx="5.8" ry="5.8"/>
+		<ellipse transform="matrix(0.1717 -0.9852 0.9852 0.1717 -1191.3826 1463.7743)" class="st8" cx="274.8" cy="1440.4" rx="5.8" ry="5.8"/>
+		<ellipse transform="matrix(0.9983 -5.876456e-02 5.876456e-02 0.9983 -91.7344 17.0843)" class="st8" cx="244.6" cy="1568.2" rx="5.8" ry="5.8"/>
+		<ellipse transform="matrix(0.4133 -0.9106 0.9106 0.4133 -1430.2607 1117.4456)" class="st8" cx="152" cy="1668.6" rx="5.8" ry="5.8"/>
+		<ellipse transform="matrix(0.895 -0.446 0.446 0.895 -608.0851 290.4985)" class="st8" cx="313.1" cy="1437.1" rx="5.8" ry="5.8"/>
+		<ellipse transform="matrix(0.9055 -0.4244 0.4244 0.9055 -652.8648 204.411)" class="st8" cx="132.5" cy="1567.9" rx="5.8" ry="5.8"/>
+		<ellipse transform="matrix(0.9982 -5.980649e-02 5.980649e-02 0.9982 -89.3412 12.3713)" class="st8" cx="162" cy="1498.7" rx="5.8" ry="5.8"/>
+		
+		<line class="st14" x1="124.3" y1="1357.6" x2="199.7" y2="1349.8"/>
+		<line class="st14" x1="208.4" y1="1438.9" x2="239.3" y2="1421.2"/>
+		<line class="st14" x1="242" y1="1420.1" x2="272.4" y2="1438.6"/>
+		<line class="st14" x1="242" y1="1425.9" x2="255" y2="1392.7"/>
+		<line class="st14" x1="208" y1="1556" x2="241.9" y2="1567.1"/>
+		<line class="st14" x1="125.4" y1="1640.8" x2="150.2" y2="1666.3"/>
+		<line class="st14" x1="274.8" y1="1440.3" x2="310.2" y2="1437.1"/>
+		<line class="st14" x1="206.7" y1="1557.1" x2="132.8" y2="1568.5"/>
+		<line class="st14" x1="125.2" y1="1641.1" x2="133" y2="1567.8"/>
+		<line class="st14" x1="132.3" y1="1571" x2="162" y2="1498.7"/>
+		<line class="st14" x1="162" y1="1498.7" x2="207.8" y2="1440.4"/>
+		<line class="st14" x1="162" y1="1498.7" x2="208.2" y2="1557.8"/>
+		<line class="st14" x1="126.6" y1="1357.3" x2="138.3" y2="1432"/>
+		<line class="st14" x1="206.9" y1="1439.5" x2="138.6" y2="1431.1"/>
+		</g>
+		<g  id="Product">
+		<circle class="st8" cx="116" cy="2666.6" r="7.8"/>
+		<circle class="st13" cx="116" cy="2666.6" r="13.3"/>
+		<circle class="st13" cx="198.5" cy="2749.2" r="13.3"/>
+		<circle class="st13" cx="198.5" cy="2749.2" r="13.3"/>
+		<circle class="st8" cx="198.5" cy="2749.2" r="7.8"/>
+		<circle class="st13" cx="199.2" cy="2748.5" r="13.3"/>
+		<circle class="st13" cx="199.2" cy="2748.5" r="13.3"/>
+		<circle class="st8" cx="199.2" cy="2748.5" r="7.8"/>
+		<circle class="st13" cx="199.2" cy="2748.5" r="13.3"/>
+		<circle class="st13" cx="199.2" cy="2748.5" r="13.3"/>
+		<circle class="st8" cx="199.2" cy="2748.5" r="7.8"/>
+		<circle class="st13" cx="115.3" cy="2950" r="13.3"/>
+		<circle class="st13" cx="115.3" cy="2950" r="13.3"/>
+		<circle class="st8" cx="115.3" cy="2950" r="7.8"/>
+		<circle class="st13" cx="116" cy="2949.4" r="13.3"/>
+		<circle class="st13" cx="116" cy="2949.4" r="13.3"/>
+		<circle class="st8" cx="116" cy="2949.4" r="7.8"/>
+		<circle class="st13" cx="116" cy="2949.4" r="13.3"/>
+		<circle class="st13" cx="116" cy="2949.4" r="13.3"/>
+		<circle class="st8" cx="116" cy="2949.4" r="7.8"/>
+		<circle class="st13" cx="198.5" cy="2866.8" r="13.3"/>
+		<circle class="st13" cx="198.5" cy="2866.8" r="13.3"/>
+		<circle class="st8" cx="198.5" cy="2866.8" r="7.8"/>
+		<circle class="st13" cx="199.2" cy="2866.2" r="13.3"/>
+		<circle class="st13" cx="199.2" cy="2866.2" r="13.3"/>
+		<circle class="st8" cx="199.2" cy="2866.2" r="7.8"/>
+		<circle class="st13" cx="199.2" cy="2866.2" r="13.3"/>
+		<circle class="st13" cx="199.2" cy="2866.2" r="13.3"/>
+		<circle class="st8" cx="199.2" cy="2866.2" r="7.8"/>
+		<circle class="st8" cx="190.7" cy="2658.8" r="5.8"/>
+		<line class="st14" x1="115.3" y1="2666.6" x2="190.7" y2="2658.8"/>
+		
+			<ellipse transform="matrix(0.6279 -0.7783 0.7783 0.6279 -2037.3038 1196.7958)" class="st8" cx="233" cy="2729" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="199.4" y1="2747.9" x2="230.3" y2="2730.2"/>
+		
+			<ellipse transform="matrix(0.1717 -0.9852 0.9852 0.1717 -2488.375 2539.2468)" class="st8" cx="265.8" cy="2749.4" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="233" y1="2729.1" x2="263.4" y2="2747.6"/>
+		<circle class="st8" cx="247.3" cy="2699.1" r="5.8"/>
+		<line class="st14" x1="233" y1="2734.9" x2="246" y2="2701.7"/>
+		
+			<ellipse transform="matrix(0.9983 -5.876456e-02 5.876456e-02 0.9983 -168.6749 18.8176)" class="st8" cx="235.6" cy="2877.3" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="199" y1="2865" x2="232.9" y2="2876.1"/>
+		
+			<ellipse transform="matrix(0.4133 -0.9106 0.9106 0.4133 -2627.561 1877.2567)" class="st8" cx="143" cy="2977.7" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="116.4" y1="2949.8" x2="141.2" y2="2975.3"/>
+		<ellipse transform="matrix(0.895 -0.446 0.446 0.895 -1192.8396 423.8933)" class="st8" cx="304.1" cy="2746" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="265.8" y1="2749.3" x2="301.2" y2="2746.1"/>
+		
+			<ellipse transform="matrix(0.9055 -0.4244 0.4244 0.9055 -1209.2667 324.3085)" class="st8" cx="123.4" cy="2876.9" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="197.7" y1="2866.1" x2="123.8" y2="2877.5"/>
+		<line class="st14" x1="116.2" y1="2950.1" x2="124" y2="2876.8"/>
+		
+			<ellipse transform="matrix(0.9982 -5.980649e-02 5.980649e-02 0.9982 -167.6432 14.1762)" class="st8" cx="153" cy="2807.7" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="123.3" y1="2880" x2="153" y2="2807.7"/>
+		<line class="st14" x1="153" y1="2807.7" x2="198.8" y2="2749.4"/>
+		<line class="st14" x1="153" y1="2807.7" x2="199.2" y2="2866.8"/>
+		<line class="st14" x1="117.6" y1="2666.3" x2="129.3" y2="2741"/>
+		<circle class="st8" cx="129.6" cy="2740.1" r="5.8"/>
+		<line class="st14" x1="197.9" y1="2748.5" x2="129.6" y2="2740.1"/>
+		</g>
+		</g>
+		<g  id="Layer_4" class="st15">
+		<g class="st16">
+		<image style="overflow:visible;" width="1158" height="1151" xlink:href="CB2435D.png"  transform="matrix(1 0 0 1 -407 968)">
+		</image>
+		<g>
+			
+				<radialGradient id="SVGID_1_" cx="149.6517" cy="1525.4917" r="98.4288" gradientTransform="matrix(1.1813 0 0 1.5936 -4.7869 -917.1152)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#330033"/>
+				<stop  offset="0.4307" style="stop-color:#330033"/>
+				<stop  offset="0.5821" style="stop-color:#2B002B;stop-opacity:0.734"/>
+				<stop  offset="0.8133" style="stop-color:#160016;stop-opacity:0.328"/>
+				<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
+			</radialGradient>
+			<ellipse class="st17" cx="172" cy="1513.9" rx="146.2" ry="143"/>
+		</g>
+		</g>
+		<g class="st18">
+		<image style="overflow:visible;" width="304" height="292" xlink:href="CB2435F.png"  transform="matrix(1 0 0 1 18 1393)">
+		</image>
+		<g>
+			
+			<text transform="matrix(1 0 0 1 135 1529.9249)" class="st19 st6 st20">UX</text>
+		</g>
+		</g>
+		<g class="st16">
+		
+			<image style="overflow:visible;" width="1158" height="1151" xlink:href="CB2435B.png"  transform="matrix(1 0 0 1 1188.2789 1624.5269)">
+		</image>
+		<g>
+			
+				<radialGradient id="SVGID_2_" cx="1500.0692" cy="1817.6064" r="98.4288" gradientTransform="matrix(1.1813 0 0 1.5936 -4.7869 -726.1064)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#330033"/>
+				<stop  offset="0.4307" style="stop-color:#330033"/>
+				<stop  offset="0.5821" style="stop-color:#2B002B;stop-opacity:0.734"/>
+				<stop  offset="0.8133" style="stop-color:#160016;stop-opacity:0.328"/>
+				<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
+			</radialGradient>
+			<ellipse class="st21" cx="1767.3" cy="2170.5" rx="146.2" ry="143"/>
+		</g>
+			</g>
+			<g class="st18">
+		<image style="overflow:visible;" width="305" height="292" xlink:href="CB24354.png"  transform="matrix(1 0 0 1 1623 2053)">
+		</image>
+		<g>
+			<rect x="1740.1" y="2154" class="st4" width="70" height="51.5"/>
+			<text transform="matrix(1 0 0 1 1740.0804 2190)" class="st19 st6 st20">UI</text>
+		</g>
+		</g>
+		<g class="st16">
+		
+			<image style="overflow:visible;" width="1157" height="1151" xlink:href="CB24349.png"  transform="matrix(1 0 0 1 -426.2388 2262.2161)">
+		</image>
+		<g>
+			
+				<radialGradient id="SVGID_3_" cx="132.7555" cy="2101.1289" r="98.4288" gradientTransform="matrix(1.1813 0 0 1.5936 -4.7869 -540.7159)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#330033"/>
+				<stop  offset="0.4307" style="stop-color:#330033"/>
+				<stop  offset="0.5821" style="stop-color:#2B002B;stop-opacity:0.734"/>
+				<stop  offset="0.8133" style="stop-color:#160016;stop-opacity:0.328"/>
+				<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
+			</radialGradient>
+			<ellipse class="st22" cx="152" cy="2807.7" rx="146.2" ry="143"/>
+		</g>
+		</g>
+		<g class="st18">
+		<image style="overflow:visible;" width="458" height="291" xlink:href="CB2434A.png"  transform="matrix(1 0 0 1 -53 2691)">
+		</image>
+		</g>
+		</svg>
+
+		<div class="card-column column-0" >
+    	<div class="card card-color-0">
+      	<div class="border"></div>
+      
+      	<img src="mymic port.jpg"  class="cropping"/>
+      
+      	<h1>Mimyk</h1>
+    	</div>
+    	<div class="card card-color-2">
+      	<div class="border" ></div>
+      	<img src="LegalPad.jpg" class="cropping" />
+      	<h1>LegalPad</h1>
+    	</div>
+  		</div>
+  		<div class="card-column column-1">
+  		  <div class="card card-color-1">
+      	<div class="border"></div>
+      	<img src="sleep app.jpg" class="cropping" />
+      	<h1>nAPP</h1>
+    	</div>
+    	<div class="card card-color-3">
+      	<div class="border"></div>
+      	<img src="CAR APP.jpg" class="cropping" />
+      	<h1>Car_App</h1>
+    	</div>
+ 		 </div>
+  		<div id="cover" class="cover"></div>
+
+		<div id="open-content" class="open-content">
+  			<a href="#" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
+		  <div href="#" id="next-content" class="close-content" style="position: fixed ; top: 100px; "><h3>Next</h3></div>
+  		<img id="open-content-image" src="" />
+
+  		<div class="text" id="open-content-text">
+  		</div>
+
+
+
+		</div>
+
+
+
+	
+<!--footer-->
+		
+		<div class="footer">
+<div class="footer-social-icons">
+    <h4 class="_14">I am available on</h4>
+    <ul class="social-icons">
+        <li><a href="https://www.linkedin.com/in/kamble-sanket-a5997a7b/" class="social-icon" target="_blank"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://www.behance.net/psycho5" class="social-icon" target="_blank"> <i class="fa fa-behance"></i></a></li>
+        <li><a href="https://github.com/psycho360" class="social-icon" target="_blank"> <i  class="fa fa-github"></i></a></li>
+        <li><a href="https://www.deviantart.com/psycho36" class="social-icon" target="_blank"> <i class="fa fa-deviantart"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCU3Z5PgSzoP3Y4PdZBYXjLw?view_as=subscriber" class="social-icon" target="_blank"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.ratemydrawings.com/user/psycho36/" class="social-icon" target="_blank"> <i class="fa fa-ratemydrawings"></i></a></li>
+        
+    </ul>
+</div>
+</div>	
+
+			
+</div>
+
+
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+var changesMade = 0;
+var triangle1 = document.getElementById("line_navig");
+var snake1 = document.getElementsByTagName("svg")[1];
+var line1 = triangle1.getBoundingClientRect();
+var denominator = line1.bottom - line1.top;
+var flagreverse= false;
+var flagreverse3= false;
+var flagreverse2= false;
+
+var navbar = document.getElementById("navbar");
+navbar.classList.add("unsticky");
+navbar.classList.remove("sticky");
+
+
+var sticky = navbar.offsetTop;
+
+
+document.getElementById("hierarchy").classList.add('downup');
+var projectrect;
+window.onscroll = function(){
+
+var triangle = document.getElementById("line_navig"); triangle.style.visibility="visible";
+var snake = document.getElementsByTagName("svg")[1];
+var line = triangle.getBoundingClientRect();
+var length = 0;
+var prevPos;
+var bbox = snake.getBBox();
+var snakelength = bbox.x+ bbox.height;
+
+    for (var i = 0 ; i < triangle.points.numberOfItems;i++) {
+    var pos = triangle.points.getItem(i);
+    if (i > 0) {
+        length += Math.sqrt(Math.pow((pos.x - prevPos.x), 2) + Math.pow((pos.y - prevPos.y), 2));
+    }
+    prevPos = pos;
+	}
+
+
+   if (line.top > window.innerHeight/2){
+   	  triangle.style.strokeDasharray = length;
+   	  triangle.style.strokeDashoffset = length;
+   	  
+
+   }
+   if (line.top < window.innerHeight/2) {
+
+   	
+
+if (true) 
+
+    {
+   
+
+
+
+//document.getElementById("demo").innerHTML = length;
+// The start position of the drawing
+triangle.style.strokeDasharray = length;
+
+// Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
+triangle.style.strokeDashoffset = length;
+
+// Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+var scrollpercent  = (window.innerHeight/2-line.top)/denominator;
+
+  var draw = length * scrollpercent;
+
+  //now for cropping
+  triangle.style.strokeDashoffset =  length-draw;
+  projectrect = document.getElementById("Layer_1_1_"). getElementsByClassName("st1");
+  if(draw<734 && flagreverse== true)
+
+ {
+
+ 				
+ 				document.getElementById("UX_1_").classList.remove('expanding');
+ 				document.getElementById("UX_1_").classList.remove('reversing');
+ 				document.getElementById("UX_1_").classList.add('reversing');
+ 				flagreverse=false;
+ 					var divsToHide = document.getElementById("UX_1_").getElementsByClassName("st8");
+
+    for(var i = 0; i < 20; i++)
+    {
+    divsToHide[i].style.visibility="hidden";
+    }
+    			 
+
+ }
+
+
+   if(draw>=734 && flagreverse== false)
+ {
+
+ 					document.getElementById("UX_1_").classList.remove('expanding');
+ 				document.getElementById("UX_1_").classList.remove('reversing');
+ 				var divsToHide = document.getElementById("UX_1_").getElementsByClassName("st8");
+
+    for(var i = 0; i < 20; i++)
+    {
+    divsToHide[i].style.visibility="visible";
+    }
+ 				//document.getElementById("UX_1_").classList.add('fadeIn');
+ 				document.getElementById("UX_1_").classList.add('expanding');
+ 				document.getElementById("UX_1_").style.visibility='visible';
+ 				
+ 				//projectrect[0].style.visibility='visible';
+ 				//projectrect[1].style.visibility='visible';
+ 				
+ 	flagreverse = true;
+				
+ } 
+///////////////////////////////////////////////////
+//for second
+///////////////////////////////////
+
+  if(draw<3399 && flagreverse2== true)
+
+ {
+
+ 				
+ 				document.getElementById("UI").classList.remove('expanding');
+ 				document.getElementById("UI").classList.remove('reversing');
+ 				document.getElementById("UI").classList.add('reversing');
+ 				flagreverse2=false;
+ 					var divsToHide = document.getElementById("UI").getElementsByClassName("st8");
+
+    for(var i = 0; i < 20; i++)
+    {
+    divsToHide[i].style.visibility="hidden";
+    }
+    			 
+
+ }
+
+
+   if(draw>=3399 && flagreverse2== false)
+ {
+
+ 					document.getElementById("UI").classList.remove('expanding');
+ 				document.getElementById("UI").classList.remove('reversing');
+ 				var divsToHide = document.getElementById("UI").getElementsByClassName("st8");
+
+    for(var i = 0; i < 20; i++)
+    {
+    divsToHide[i].style.visibility="visible";
+    }
+ 				//document.getElementById("UX_1_").classList.add('fadeIn');
+ 				document.getElementById("UI").classList.add('expanding');
+ 				document.getElementById("UI").style.visibility='visible';
+ 				
+ 				//projectrect[2].style.visibility='visible';
+ 				//projectrect[3].style.visibility='visible';
+ 				
+ 	flagreverse2 = true;
+				
+ } 
+
+///////////////////////
+/// for third
+//////////////////////
+
+	
+  if(draw<6036 && flagreverse3== true)
+
+ {
+
+ 				
+ 				document.getElementById("Product").classList.remove('expanding');
+ 				document.getElementById("Product").classList.remove('reversing');
+ 				document.getElementById("Product").classList.add('reversing');
+ 				flagreverse3=false;
+ 					var divsToHide = document.getElementById("Product").getElementsByClassName("st8");
+
+    for(var i = 0; i < 20; i++)
+    {
+    divsToHide[i].style.visibility="hidden";
+    }
+    			 
+
+ }
+
+
+   if(draw>=6036 && flagreverse3== false)
+ {
+
+ 					document.getElementById("Product").classList.remove('expanding');
+ 				document.getElementById("Product").classList.remove('reversing');
+ 				var divsToHide = document.getElementById("Product").getElementsByClassName("st8");
+
+    for(var i = 0; i < 20; i++)
+    {
+    divsToHide[i].style.visibility="visible";
+    }
+ 				//document.getElementById("UX_1_").classList.add('fadeIn');
+ 				document.getElementById("Product").classList.add('expanding');
+ 				document.getElementById("Product").style.visibility='visible';
+ 				
+ 				projectrect[4].style.visibility='visible';
+ 				projectrect[5].style.visibility='visible';
+ 				
+ 	flagreverse3 = true;
+				
+ } 
+
+
+
+ //////////////////////////////////////////////
+    } 
+    
+    }
+   
+
+////// parallax scrolling background
+	var documentEl = $(document),
+		parallaxBg = $('div.parallax-bg')		// body...
+		documentEl.on('scroll', function(){
+				var currScrollPos = documentEl.scrollTop();
+				parallaxBg.css('background-position','0' + -currScrollPos/50 + 'px');
+
+		});
+
+		////////
+		  if (window.pageYOffset >= sticky && navcheck==false) {
+    navbar.classList.remove("unsticky");
+    navbar.classList.add("sticky");
+    
+  } else if(window.pageYOffset < sticky && navcheck==false)  {
+    navbar.classList.remove("sticky");
+    navbar.classList.add("unsticky");
+  }
+  else if( navcheck== true)
+  {
+  	navbar.classList.remove("unsticky");
+    navbar.classList.add("sticky");
+  }
+//document.getElementById("demo").innerHTML = window.pageYOffset+" | "+draw+" | ";
+}
+
+
+
+
+	
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="script.js"></script> 
+
+
+</body>
+</html>
+
