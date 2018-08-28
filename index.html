@@ -3,14 +3,30 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width-device-width, initial-scale-1">	
-	<title>Parallax Scrolling</title>
+	<meta charset="utf-8">	
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	
+	<title>UX * SANKET KAMBLE </title>
+	<link rel="shortcut icon" type="image/png" href="LOGOED.png" />
 	<link rel="stylesheet" href="style.css"> 
 	<style type="text/css">
 		
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+
+@font-face {
+font-family: "Montserrat";
+src: url("fonts/Montserrat-Light.ttf");
+src:
+url("fonts/Montserrat.woff") format("woff"),
+url("fonts/Montserrat.otf") format("opentype"),
+url("fonts/Montserrat.svg#filename") format("svg");
+}
+
 
 a {
     text-decoration: none;
@@ -96,29 +112,38 @@ p > a:hover{
 
 #navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #330033;
   z-index: 1000;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
 }
 
 #navbar a {
 
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #FFFF00;
   text-align: center;
   padding: 3% 12%;
   text-decoration: none;
+  font-family: 'Arial';
+  font-weight:normal;
+font-style:normal;
   font-size: 17px;
 }
 
 #navbar a:hover {
-  background-color: #ddd;
+
+  background-color: #b2b2b2;
+  
   color: black;
+
 }
 
 #navbar a.active {
-  background-color: #4CAF50;
-  color: white;
+  
+  background-color: #ddd;
+  color: #330033;
 }
 
 
@@ -137,7 +162,7 @@ p > a:hover{
 	 width:100%;
     text-align: center;
 	position: relative;
-	top:800px;
+	top:600px;
 }
 
   .st0{fill:none;stroke:#E6E6E6;stroke-width:10;stroke-miterlimit:10;}
@@ -197,7 +222,7 @@ footer
  
     position: relative;
 height: 0px;
-  top: -200px;
+  top: -1000px;
 }
 
 
@@ -310,8 +335,17 @@ ul.social-icons {
     background-color: #05cc46;
 }
 
-
-
+.projectthumb{
+	width: 70%;
+	margin: 0 auto;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+.polaroid {
+ 
+  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
 
 	</style>
 </head>
@@ -323,8 +357,13 @@ ul.social-icons {
 		<h1 id="demo" style="position:fixed;" class="readings"></h1>
 		<!--<img src="nodelink.svg" style="position:relative; left: 55px; top:1200px;" width="10%" height="10%" >
 		-->
-		<img src="My portrait.svg" style="position:relative; left:600px;  top:450px;" width="600" height="400"/>
-		<h1 id="demo1"  ></h1>
+		<div>
+			<img src="myportrait/My Portrait.png" style="position:relative; left:600px;  top:750px; z-index: 2" width="400" height=400"/>
+		
+		</div>
+		
+		<img src="navline.svg"style="position:relative; left:390px;  top:650px; z-index: 1" width="500" height="500"/>
+				<h1 id="demo1"  ></h1>
 		<h1 id="demo2"></h1>
 		<h1 id="demo3"></h1>
 		<h1 id="demo4"></h1>
@@ -340,20 +379,10 @@ ul.social-icons {
 
 		</div><!-- /container -->
 
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 1920 3500" style="enable-background:new 0 0 1920 3500 ; background-color: transparent;  " xml:space="preserve">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  style="position: relative; top: -190px"
+		 viewBox="0 0 1920 3200" style="enable-background:new 0 0 1920 3200 ; background-color: transparent;  " xml:space="preserve">
 
 		<g id="Layer_1_1_" class="parallax-bg">
-		<g  id="hierarchy" class="hierarchy">
-			
-			<g>
-				<g>
-					<g>
-						<path class="st9" d="M649,788v-84h318v84 M1318,413v291H967h351v84"/>
-					</g>
-				</g>
-			</g>
-		</g>
 		
 		<rect   x="384" y="1283" class="st1" width="716" height="462" style="visibility: hidden;"/>
 		<rect  x="1153" y="1283" class="st1" width="721" height="462" style="visibility: hidden;"/>
@@ -364,20 +393,13 @@ ul.social-icons {
 		<rect  x="388" y="2578" class="st1" width="716" height="462" style="visibility: hidden;"/>
 		<rect  x="1157" y="2578" class="st1" width="721" height="462" style="visibility: hidden;"/>
 		
-		<path  class="st10" d="M471,1105H59 M62,1102v741 M62,1840h1813 M1875,1839v632 M1875,2471H57 M58,2471v570"/>
-		</g>
 		<svg  id = "snake" version="1.1">
 		<polyline id="line_navig" class="st9 path parallax-bg" style="visibility:hidden" points="471,1097 60,1097 60,1355.9 119.2,1355.9 202.8,1439.5 202.8,1557.8 119.2,1641.5 
 		60,1641.5 60,1835 1870.9,1835 1870.9,2016.7 1802.3,2016.7 1718.6,2100.4 1718.6,2218.7 1802.3,2302.4 1870.9,2302.4 1870.9,2466 
 		60.1,2466 61.2,2666.2 114.2,2666.2 197.8,2749.8 197.8,2868.2 114.2,2951.8 61.2,2951.8 61.2,3094.1 	"/>
+
 		</svg>
-		<g  id="line_navigate_complex" class="st11">
-		<path class="st12" d="M469,1100H60h-3 M60,1638v197v3 M60,1097v3v261.7 M1873,1835H60 M1873,2466v-163.9 M1873,1834v1v185.9
-			 M1876,2466H56h-1 M56,2666.9V2466 M56,3036v-88.9"/>
-		<polyline class="st12" points="1871,2304.1 1801.4,2304.1 1718.3,2221 1718.3,2103.5 1801.4,2020.4 1871,2020.4 		"/>
-		<polyline class="st12" points="61.2,1358.4 120.9,1358.4 204,1441.5 204,1559 120.9,1642.1 61.2,1642.1 		"/>
-		<polyline class="st12" points="55,2665.4 113.9,2665.4 197,2749.5 197,2867 113.9,2950.1 55,2950.1 		"/>
-		</g>
+		
 		<g id="UI" >
 		<circle class="st8" cx="1802" cy="2020.6" r="7.8"/>
 		<circle class="st13" cx="1802" cy="2020.6" r="13.3"/>
@@ -557,6 +579,7 @@ ul.social-icons {
 		<line class="st14" x1="117.6" y1="2666.3" x2="129.3" y2="2741"/>
 		<circle class="st8" cx="129.6" cy="2740.1" r="5.8"/>
 		<line class="st14" x1="197.9" y1="2748.5" x2="129.6" y2="2740.1"/>
+		<circle class="st8" cx="61.2" cy="3094.1" r="7.8"/>
 		</g>
 		</g>
 		<g  id="Layer_4" class="st15">
@@ -629,6 +652,8 @@ ul.social-icons {
 		</g>
 		</svg>
 
+
+<div class="projectthumb">
 		<div class="card-column column-0" >
     	<div class="card card-color-0">
       	<div class="border"></div>
@@ -655,11 +680,27 @@ ul.social-icons {
       	<h1>Car_App</h1>
     	</div>
  		 </div>
+
+ 		 <div class="card-column column-2">
+  		  <div class="card card-color-4">
+      	<div class="border"></div>
+      	<img src="Ergocheck.jpg" class="cropping" />
+      	<h1>Ergocheck</h1>
+    	</div>
+    	<div class="card card-color-5">
+      	<div class="border"></div>
+      	<img src="DailyGate.jpg" class="cropping" />
+      	<h1>DailyGate</h1>
+    	</div>
+ 		 </div>	
+</div>
+
   		<div id="cover" class="cover"></div>
 
 		<div id="open-content" class="open-content">
-  			<a href="#" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
-		  <div href="#" id="next-content" class="close-content" style="position: fixed ; top: 100px; "><h3>Next</h3></div>
+  			<a href="index.html" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
+		  <div href="index.html" id="next-content" class="close-content" style="position: fixed ; left: 95%; top: 500px;font-family: 'Arial' "><h3><a href="#">Next</a></h3></div>
+		    <div href="index.html" id="prev-content" class="close-content" style="position: fixed ;left: 10px; top: 500px; font-family: 'Arial' "><h3 ><a href="#">Previous</a></h3></div>
   		<img id="open-content-image" src="" />
 
   		<div class="text" id="open-content-text">
@@ -669,14 +710,11 @@ ul.social-icons {
 
 		</div>
 
+</div>
 
-
-	
-<!--footer-->
-		
-		<div class="footer">
+				<div class="footer">
 <div class="footer-social-icons">
-    <h4 class="_14">I am available on</h4>
+    <h4 class="_14"style="font-family:'Arial';">I am available on</h4>
     <ul class="social-icons">
         <li><a href="https://www.linkedin.com/in/kamble-sanket-a5997a7b/" class="social-icon" target="_blank"> <i class="fa fa-linkedin"></i></a></li>
         <li><a href="https://www.behance.net/psycho5" class="social-icon" target="_blank"> <i class="fa fa-behance"></i></a></li>
@@ -688,11 +726,6 @@ ul.social-icons {
     </ul>
 </div>
 </div>	
-
-			
-</div>
-
-
 
 
 </div>
@@ -716,7 +749,7 @@ navbar.classList.remove("sticky");
 var sticky = navbar.offsetTop;
 
 
-document.getElementById("hierarchy").classList.add('downup');
+//document.getElementById("hierarchy").classList.add('downup');
 var projectrect;
 window.onscroll = function(){
 
@@ -896,8 +929,8 @@ var scrollpercent  = (window.innerHeight/2-line.top)/denominator;
  				document.getElementById("Product").classList.add('expanding');
  				document.getElementById("Product").style.visibility='visible';
  				
- 				projectrect[4].style.visibility='visible';
- 				projectrect[5].style.visibility='visible';
+ 				//projectrect[4].style.visibility='visible';
+ 				//projectrect[5].style.visibility='visible';
  				
  	flagreverse3 = true;
 				
@@ -935,10 +968,25 @@ var scrollpercent  = (window.innerHeight/2-line.top)/denominator;
     navbar.classList.add("sticky");
   }
 //document.getElementById("demo").innerHTML = window.pageYOffset+" | "+draw+" | ";
+if(comeback==false)
+
+	sessionStorage.scrollTop = $(this).scrollTop();
+
+
+
+
+
 }
 
 
 
+
+$(document).ready(function() {
+	
+  if (sessionStorage.scrollTop != "undefined") {
+    $(window).scrollTop(sessionStorage.scrollTop);
+  }
+});
 
 	
 </script>

@@ -49,13 +49,14 @@ h6 {
   overflow: hidden;
   background-color: #333;
   z-index: 1000;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #navbar a {
 
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #FFFF00;
   text-align: center;
   padding: 3% 12%;
   text-decoration: none;
@@ -63,13 +64,14 @@ h6 {
 }
 
 #navbar a:hover {
-  background-color: #ddd;
+  background-color: #b2b2b2;
+ 
   color: black;
 }
 
 #navbar a.active {
-  background-color: #4CAF50;
-  color: white;
+   background-color: #ddd;
+  color: #330033;
 }
 
 /*  footer*/
@@ -80,6 +82,7 @@ h6 {
     height: 400px;
     margin: auto 0;
     position: relative;
+    padding: 100px;
 }
 
 

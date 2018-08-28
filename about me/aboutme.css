@@ -46,13 +46,14 @@ h6 {
   overflow: hidden;
   background-color: #333;
   z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #navbar a {
 
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #FFFF00;
   text-align: center;
   padding: 3% 12%;
   text-decoration: none;
@@ -60,13 +61,15 @@ h6 {
 }
 
 #navbar a:hover {
-  background-color: #ddd;
+ 
+  background-color: #b2b2b2;
+  
   color: black;
 }
 
 #navbar a.active {
-  background-color: #4CAF50;
-  color: white;
+   background-color: #ddd;
+  color: #330033;
 }
 
 
@@ -75,6 +78,8 @@ h6 {
     height: 400px;
     margin: auto 0;
     position: relative;
+      padding: 100px;
+      top:100px;
 }
 
 
@@ -237,8 +242,8 @@ ul.social-icons {
 }
 
 .img-c.active1 {
-  width: 100% !important;
-  height: 100% !important;
+  width: 50% !important;
+  height: 50% !important;
   position: absolute;
   z-index: 2;
 }
@@ -250,7 +255,14 @@ ul.social-icons {
 }
 
 .img-c.active1.positioned {
-  left: 0 !important;
-  top: 0 !important;
+  left: 25% !important;
   transition-delay: 50ms;
+}
+.info{
+  padding-top: 100px;
+}
+.imagescale{
+height: 300px;
+width: 300px;
+
 }

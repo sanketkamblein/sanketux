@@ -1,9 +1,9 @@
 // listing vars here so they're in the global scope
 var cards, nCards, cover, openContent, openContentText, pageIsOpen = false,
-    openContentImage, closeContent, windowWidth, windowHeight, currentCard,navigation,next;
+    openContentImage, closeContent, windowWidth, windowHeight, currentCard,navigation,next,prev;
     var navcheck=false;
-    //var navbaro;
-
+    var comeback=false;
+    var pronum;
 // initiate the process
 init();
 
@@ -11,6 +11,7 @@ function init() {
   resize();
   selectElements();
   attachListeners();
+
 }
 
 // select all the elements in the DOM that are going to be used
@@ -25,6 +26,7 @@ function selectElements() {
    
     navigation=document.getElementById('navbar');
     next=document.getElementById('next-content');
+    prev=document.getElementById('prev-content');
 }
 
 /* Attaching three event listeners here:
@@ -39,6 +41,7 @@ function attachListeners() {
   
   }
   closeContent.addEventListener('click', onCloseClick);
+
   
 
 
@@ -55,7 +58,9 @@ function attachListenerToCard(i) {
 
 /* When a card is clicked */
 function onCardClick(card, i) {
+
      navcheck =true;
+     comeback=true;
   // set the current card
   currentCard = card;
   // add the 'clicked' class to the card, so it animates out
@@ -67,7 +72,7 @@ function onCardClick(card, i) {
   // add the open class to the page content
   openContent.className += ' open';
 
-  
+  pronum=i;
 
   next.addEventListener('click',function(e){
     if(i>=nCards-1)
@@ -77,17 +82,27 @@ function onCardClick(card, i) {
 
     onNextClick(i);});
 
+  prev.addEventListener('click',function(e){
+    if(i<=0)
+    i=nCards-1;
+  else
+    i=i-1;
+
+    onNextClick(i);});
+
 }
+
+
 function onNextClick(i) {
 
-
-   onCloseClick();
-
-    currentCard = cards[i];
+  pronum=i;
+  // onCloseClick();
+   currentCard = cards[i];
   
     onCardClick(currentCard,i);
 
 }
+
 /*
 * This effect is created by taking a separate 'cover' div, placing
 * it in the same position as the clicked card, and animating it to
@@ -106,7 +121,20 @@ function animateCoverUp(card) {
   setCoverColor(cardStyle);
   scaleCoverToFillWindow(cardPosition);
   // update the content of the opened page
-  openContentText.innerHTML = '<h1>'+card.children[2].textContent+'</h1>'+paragraphText;
+
+  if(pronum==0)
+  openContentText.innerHTML = '<h1>'+card.children[2].textContent+'</h1>'+paragraphText1;
+ if(pronum==1)
+   openContentText.innerHTML = '<h1>'+card.children[2].textContent+'</h1>'+paragraphText2;
+ if(pronum==2)
+    openContentText.innerHTML = '<h1>'+card.children[2].textContent+'</h1>'+paragraphText3;
+ if(pronum==3)
+  openContentText.innerHTML = '<h1>'+card.children[2].textContent+'</h1>'+paragraphText4;
+ if(pronum==4)
+   openContentText.innerHTML = '<h1>'+card.children[2].textContent+'</h1>'+paragraphText5;
+ if(pronum==5)
+   openContentText.innerHTML = '<h1>'+card.children[2].textContent+'</h1>'+paragraphText6;
+
   openContentImage.src = card.children[1].src;
   setTimeout(function() {
     // update the scroll position to 0 (so it is at the top of the 'opened' page)
@@ -169,6 +197,7 @@ function onCloseClick() {
   animateOtherCards(currentCard, false);
 
   navcheck =false;
+  comeback=false;
 }
 
 function animateOtherCards(card, out) {
@@ -213,4 +242,9 @@ function resize() {
   windowHeight = window.innerHeight;
 }
 
-var paragraphText = '<p>Somebody once told me the world is gonna roll me. I ain\'t the sharpest tool in the shed. She was looking kind of dumb with her finger and her thumb in the shape of an "L" on her forehead. Well the years start coming and they don\'t stop coming. Fed to the rules and I hit the ground running. Didn\'t make sense not to live for fun. Your brain gets smart but your head gets dumb. So much to do, so much to see. So what\'s wrong with taking the back streets? You\'ll never know if you don\'t go. You\'ll never shine if you don\'t glow.</p><p>Hey now, you\'re an all-star, get your game on, go play. Hey now, you\'re a rock star, get the show on, get paid. And all that glitters is gold. Only shooting stars break the mold.</p><p>It\'s a cool place and they say it gets colder. You\'re bundled up now, wait till you get older. But the meteor men beg to differ. Judging by the hole in the satellite picture. The ice we skate is getting pretty thin. The water\'s getting warm so you might as well swim. My world\'s on fire, how about yours? That\'s the way I like it and I never get bored.</p>';
+ var paragraphText1 = '<p>LEARNING:  Mymic is unique problem that I came across. It was more like designing a game and service at the same time. Since it is a Project where technical Intellectual Property cannot be disclosed. But I learned how to prioritize design process itself. It is not easy to follow design process thoroughly as stated in books or even as given in my presentation. One must manage the team and the flow of work at the same time. Planning a vision for the product that deals only with doctors which is minimum amount of population was a new learning. The advantageous for me within this project was the platform. I went through the design language for the first time. Overall it helped me to understand service design and the psychological understanding exist in video games or simulations.</p>';
+ var paragraphText2 = '<p>LEARNING:  LegalPad is my bachelor’s project. Due to a longer period to solve this problem I could use Design Process. This project shows how I transformed from an Engineer to Designer. I remade the project and realized without the process it was very difficult to assume priorities of requirements. Since it was first time and a longest duration I had spent this project I could understand and walkthrough the UX process.</p>';
+var paragraphText3 = '<p>LEARNING:  nApp holds completely different motive from what a usual application do. I learned marketing strategy and how to also make user learn something new. This project was easy for me to get into research because I was one of the users already. Also, nApp doesn’t have a particular user but mostly everyone. Making visuals acceptable to everyone was learnt here. Interaction Design is a major part in nApp than information architecture.</p>';
+ var paragraphText4 = '<p>LEARNING:  Since car app wasn’t a project but an entry in design competition at TopCoder. I managed to make into finals. But something called ‘accessibility’ was unheard for me before this project. I designed the app following the Ben Shneidermans "Eight Golden Rules" taught in HCI course when I was in Bachelors. One thing I realised sometimes ‘History’ and ‘Reality Match’ differs with each other. I made everything which follows golden rules but according to ‘history’ task bar in phone always comes at the Top, where I made was at bottom. Also, the sliding menu at the right side. But a suggestion from the examiner gave a call on the side of history over heuristic principles which I learned after the Master’s degree.</p>';
+ var paragraphText5 = '<p>LEARNING:  It is a thesis project of mine in my master’s studies. It does have Intellectual Property associated to my alma mater. Since, I have joined in IISc as a Product Design student UX plays subset here. Ergocheck is a posture and heart rate monitoring device for factory workers. My learning in this project is decision making, project scheduling, Prioritizing the problem definition. It sounds more than just a design but that’s what IISc teaches. I could also learn electronics and now can work in IOT as a designer who can analyse prototype by developing it. The project got all my skills from User Empathy to programming. Hence overall it gave me satisfaction of understanding project development.</p>';
+ var paragraphText6 = '<p>LEARNING:  I do lack in visuals. I wanted to improve my UI designing skills. And somebody wanted me to have learn and get paid at the same time. DailyGate was a treat to make myself comfortable in designing UI. I was not a UX designer for the first time. This project made me realise doing together is a bit difficult and a same mind, not a brain, but the same mind cannot do the User Experience (Information Architecture, Wireframes) and UI design at the same time. Both the things need completely empty mind to start. Hence the process is rightly made and never mixes these two things where usually it is very natural that one mixes it and gets into trouble.</p>';

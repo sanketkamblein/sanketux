@@ -24,7 +24,10 @@ p {
 }
 
 .column-1 {
-  padding-top: 100px;
+  padding-top: 200px;
+}
+.column-2 {
+  padding-top: 150px;
 }
 
 .card {
@@ -99,20 +102,30 @@ p {
 
 .open-content img {
   position: relative;
-  width: 90%;
-  margin-left: 3%;
+  width: 80%;
+  margin-left: 10%;
   margin-top: 20px;
   z-index: 5;
-  top: -2800px;
+  top: -3100px;
+  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .open-content .text {
   background: #fff;
-  margin-top: -56%;
-  padding: 60% 5% 5% 5%;
-  width: 80%;
-  margin-left: 5%;
-  margin-bottom: 5%;
+
+margin-top: -250%;
+
+padding: 20% 5% 5% 5%;
+
+width: 70%;
+
+margin-left:12%;
+
+margin-bottom: 5%;
+
+font-family: 'Arial';
+text-align: justify;
+
 }
 
 .open-content .text h1, .open-content .text p {
@@ -129,7 +142,22 @@ p {
   width: 30px;
   height: 30px;
 }
-
+.next-content {
+  display: block;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 30px;
+  height: 30px;
+}
+.prev-content {
+  display: block;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 30px;
+  height: 30px;
+}
 .close-content span {
   background: #222;
   width: 30px;

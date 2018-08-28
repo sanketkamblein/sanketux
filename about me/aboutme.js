@@ -60,13 +60,16 @@ $(function() {
     
     $(".active1").not($(this)).remove()
     let copy = $(this).clone();
-    copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active1")
+    copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active1");
     $(".active1").css('top', y - 8);
     $(".active1").css('left', x - 8);
-    
+     
       setTimeout(function() {
     copy.addClass("positioned")
   }, 0)
+
+
+
     
   }) 
   
