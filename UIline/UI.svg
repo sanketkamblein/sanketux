@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 2036.2" style="enable-background:new 0 0 1920 2036.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#E6E6E6;stroke-width:6;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st4{fill:none;}
+	.st5{fill:#E6E6E6;}
+	.st6{font-family:'Roboto-Regular';}
+	.st7{font-size:48px;}
+	.st8{display:none;fill:none;stroke:#E6E6E6;stroke-width:6;stroke-miterlimit:10;}
+</style>
+<g id="Layer_3_1_">
+	<svg  id = "snake" version="1.1">
+	<polyline id="line_navig" class="st1" points=" 470,11.9 59,11.9 59,270.8 118.2,270.8 201.8,354.4 201.8,472.7 118.2,556.4 59,556.4 59,749.9
+		1869.9,749.9 1869.9,931.6 1801.3,931.6 1717.6,1015.3 1717.6,1133.6 1801.3,1217.2 1869.9,1217.2 1869.9,1380.9 59.1,1380.9
+		60.2,1581.1 113.2,1581.1 196.8,1664.7 196.8,1783.1 113.2,1866.7 60.2,1866.7 60.2,2008.9"/>
+		</svg>
+	<g id="UI">
+		<circle class="st0" cx="1801" cy="935.5" r="7.8"/>
+		<circle class="st2" cx="1801" cy="935.5" r="13.3"/>
+		<circle class="st2" cx="1718.5" cy="1018.1" r="13.3"/>
+		<circle class="st2" cx="1718.5" cy="1018.1" r="13.3"/>
+		<circle class="st0" cx="1718.5" cy="1018.1" r="7.8"/>
+		<circle class="st2" cx="1717.8" cy="1017.4" r="13.3"/>
+		<circle class="st2" cx="1717.8" cy="1017.4" r="13.3"/>
+		<circle class="st0" cx="1717.8" cy="1017.4" r="7.8"/>
+		<circle class="st2" cx="1717.8" cy="1017.4" r="13.3"/>
+		<circle class="st2" cx="1717.8" cy="1017.4" r="13.3"/>
+		<circle class="st0" cx="1717.8" cy="1017.4" r="7.8"/>
+		<circle class="st2" cx="1801.7" cy="1218.9" r="13.3"/>
+		<circle class="st2" cx="1801.7" cy="1218.9" r="13.3"/>
+		<circle class="st0" cx="1801.7" cy="1218.9" r="7.8"/>
+		<circle class="st2" cx="1801" cy="1218.3" r="13.3"/>
+		<circle class="st2" cx="1801" cy="1218.3" r="13.3"/>
+		<circle class="st0" cx="1801" cy="1218.3" r="7.8"/>
+		<circle class="st2" cx="1801" cy="1218.3" r="13.3"/>
+		<circle class="st2" cx="1801" cy="1218.3" r="13.3"/>
+		<circle class="st0" cx="1801" cy="1218.3" r="7.8"/>
+		<circle class="st2" cx="1718.5" cy="1135.7" r="13.3"/>
+		<circle class="st2" cx="1718.5" cy="1135.7" r="13.3"/>
+		<circle class="st0" cx="1718.5" cy="1135.7" r="7.8"/>
+		<circle class="st2" cx="1717.8" cy="1135.1" r="13.3"/>
+		<circle class="st2" cx="1717.8" cy="1135.1" r="13.3"/>
+		<circle class="st0" cx="1717.8" cy="1135.1" r="7.8"/>
+		<circle class="st2" cx="1717.8" cy="1135.1" r="13.3"/>
+		<circle class="st2" cx="1717.8" cy="1135.1" r="13.3"/>
+		<circle class="st0" cx="1717.8" cy="1135.1" r="7.8"/>
+		<circle class="st0" cx="1726.3" cy="927.7" r="5.8"/>
+		<line class="st3" x1="1801.7" y1="935.5" x2="1726.3" y2="927.7"/>
+		
+			<ellipse transform="matrix(0.7783 -0.6279 0.6279 0.7783 -253.2094 1278.621)" class="st0" cx="1684" cy="997.9" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="1717.6" y1="1016.8" x2="1686.7" y2="999.1"/>
+		
+			<ellipse transform="matrix(0.9852 -0.1717 0.1717 0.9852 -150.3028 298.6541)" class="st0" cx="1651.4" cy="1018.3" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="1684" y1="998" x2="1653.6" y2="1016.5"/>
+		<circle class="st0" cx="1669.7" cy="968" r="5.8"/>
+		<line class="st3" x1="1684" y1="1003.8" x2="1671" y2="970.6"/>
+		
+			<ellipse transform="matrix(5.876456e-02 -0.9983 0.9983 5.876456e-02 438.5592 2757.2959)" class="st0" cx="1681.5" cy="1146.1" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="1718" y1="1133.9" x2="1684.1" y2="1145"/>
+		
+			<ellipse transform="matrix(0.9106 -0.4133 0.4133 0.9106 -356.5214 844.6569)" class="st0" cx="1774.1" cy="1246.4" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="1800.6" y1="1218.7" x2="1775.8" y2="1244.2"/>
+		<ellipse transform="matrix(0.446 -0.895 0.895 0.446 -15.009 2005.8035)" class="st0" cx="1612.8" cy="1015" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="1651.2" y1="1018.2" x2="1615.8" y2="1015"/>
+		
+			<ellipse transform="matrix(0.4244 -0.9055 0.9055 0.4244 -4.9067 2283.4087)" class="st0" cx="1793.5" cy="1145.6" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="1719.3" y1="1135" x2="1793.2" y2="1146.4"/>
+		<line class="st3" x1="1800.8" y1="1219" x2="1793" y2="1145.7"/>
+		
+			<ellipse transform="matrix(5.980649e-02 -0.9982 0.9982 5.980649e-02 583.8677 2772.9941)" class="st0" cx="1764" cy="1076.5" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="1793.7" y1="1148.9" x2="1764" y2="1076.6"/>
+		<line class="st3" x1="1764" y1="1076.6" x2="1718.2" y2="1018.3"/>
+		<line class="st3" x1="1764" y1="1076.6" x2="1717.8" y2="1135.7"/>
+		<line class="st3" x1="1799.4" y1="935.2" x2="1787.7" y2="1009.9"/>
+		<circle class="st0" cx="1787.4" cy="1009" r="5.8"/>
+		<line class="st3" x1="1719.1" y1="1017.4" x2="1787.4" y2="1009"/>
+	</g>
+	<g id="UX_1_">
+		<circle class="st0" cx="124" cy="272.5" r="7.8"/>
+		<circle class="st2" cx="124" cy="272.5" r="13.3"/>
+		<circle class="st2" cx="206.5" cy="355.1" r="13.3"/>
+		<circle class="st2" cx="206.5" cy="355.1" r="13.3"/>
+		<circle class="st0" cx="206.5" cy="355.1" r="7.8"/>
+		<circle class="st2" cx="207.2" cy="354.4" r="13.3"/>
+		<circle class="st2" cx="207.2" cy="354.4" r="13.3"/>
+		<circle class="st0" cx="207.2" cy="354.4" r="7.8"/>
+		<circle class="st2" cx="207.2" cy="354.4" r="13.3"/>
+		<circle class="st2" cx="207.2" cy="354.4" r="13.3"/>
+		<circle class="st0" cx="207.2" cy="354.4" r="7.8"/>
+		<circle class="st2" cx="123.3" cy="555.9" r="13.3"/>
+		<circle class="st2" cx="123.3" cy="555.9" r="13.3"/>
+		<circle class="st0" cx="123.3" cy="555.9" r="7.8"/>
+		<circle class="st2" cx="124" cy="555.3" r="13.3"/>
+		<circle class="st2" cx="124" cy="555.3" r="13.3"/>
+		<circle class="st0" cx="124" cy="555.3" r="7.8"/>
+		<circle class="st2" cx="124" cy="555.3" r="13.3"/>
+		<circle class="st2" cx="124" cy="555.3" r="13.3"/>
+		<circle class="st0" cx="124" cy="555.3" r="7.8"/>
+		<circle class="st2" cx="206.5" cy="472.7" r="13.3"/>
+		<circle class="st2" cx="206.5" cy="472.7" r="13.3"/>
+		<circle class="st0" cx="206.5" cy="472.7" r="7.8"/>
+		<circle class="st2" cx="207.2" cy="472.1" r="13.3"/>
+		<circle class="st2" cx="207.2" cy="472.1" r="13.3"/>
+		<circle class="st0" cx="207.2" cy="472.1" r="7.8"/>
+		<circle class="st2" cx="207.2" cy="472.1" r="13.3"/>
+		<circle class="st2" cx="207.2" cy="472.1" r="13.3"/>
+		<circle class="st0" cx="207.2" cy="472.1" r="7.8"/>
+		<circle class="st0" cx="198.7" cy="264.7" r="5.8"/>
+		<line class="st3" x1="123.3" y1="272.5" x2="198.7" y2="264.7"/>
+		
+			<ellipse transform="matrix(0.6279 -0.7783 0.7783 0.6279 -170.9839 312.1667)" class="st0" cx="241" cy="334.9" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="207.4" y1="353.8" x2="238.3" y2="336.1"/>
+		
+			<ellipse transform="matrix(0.1717 -0.9852 0.9852 0.1717 -123.2157 563.9852)" class="st0" cx="273.8" cy="355.3" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="241" y1="335" x2="271.4" y2="353.5"/>
+		<circle class="st0" cx="255.3" cy="305" r="5.8"/>
+		<line class="st3" x1="241" y1="340.8" x2="254" y2="307.6"/>
+		
+			<ellipse transform="matrix(0.9983 -5.876456e-02 5.876456e-02 0.9983 -27.9702 15.1503)" class="st0" cx="243.6" cy="483.1" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="207" y1="470.9" x2="240.9" y2="482"/>
+		
+			<ellipse transform="matrix(0.4133 -0.9106 0.9106 0.4133 -442.7525 479.9003)" class="st0" cx="151" cy="583.5" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="124.4" y1="555.7" x2="149.2" y2="581.2"/>
+		<ellipse transform="matrix(0.895 -0.446 0.446 0.895 -124.2176 176.145)" class="st0" cx="312.1" cy="352" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="273.8" y1="355.2" x2="309.2" y2="352"/>
+		
+			<ellipse transform="matrix(0.9055 -0.4244 0.4244 0.9055 -192.45 101.4217)" class="st0" cx="131.5" cy="482.8" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="205.7" y1="472" x2="131.8" y2="483.4"/>
+		<line class="st3" x1="124.2" y1="556" x2="132" y2="482.7"/>
+		
+			<ellipse transform="matrix(0.9982 -5.980649e-02 5.980649e-02 0.9982 -24.4465 10.3692)" class="st0" cx="161" cy="413.6" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="131.3" y1="485.9" x2="161" y2="413.6"/>
+		<line class="st3" x1="161" y1="413.6" x2="206.8" y2="355.3"/>
+		<line class="st3" x1="161" y1="413.6" x2="207.2" y2="472.7"/>
+		<line class="st3" x1="125.6" y1="272.2" x2="137.3" y2="346.9"/>
+		<circle class="st0" cx="137.6" cy="346" r="5.8"/>
+		<line class="st3" x1="205.9" y1="354.4" x2="137.6" y2="346"/>
+	</g>
+	<g id="Product">
+		<circle class="st0" cx="115" cy="1581.5" r="7.8"/>
+		<circle class="st2" cx="115" cy="1581.5" r="13.3"/>
+		<circle class="st2" cx="197.5" cy="1664.1" r="13.3"/>
+		<circle class="st2" cx="197.5" cy="1664.1" r="13.3"/>
+		<circle class="st0" cx="197.5" cy="1664.1" r="7.8"/>
+		<circle class="st2" cx="198.2" cy="1663.4" r="13.3"/>
+		<circle class="st2" cx="198.2" cy="1663.4" r="13.3"/>
+		<circle class="st0" cx="198.2" cy="1663.4" r="7.8"/>
+		<circle class="st2" cx="198.2" cy="1663.4" r="13.3"/>
+		<circle class="st2" cx="198.2" cy="1663.4" r="13.3"/>
+		<circle class="st0" cx="198.2" cy="1663.4" r="7.8"/>
+		<circle class="st2" cx="114.3" cy="1864.9" r="13.3"/>
+		<circle class="st2" cx="114.3" cy="1864.9" r="13.3"/>
+		<circle class="st0" cx="114.3" cy="1864.9" r="7.8"/>
+		<circle class="st2" cx="115" cy="1864.3" r="13.3"/>
+		<circle class="st2" cx="115" cy="1864.3" r="13.3"/>
+		<circle class="st0" cx="115" cy="1864.3" r="7.8"/>
+		<circle class="st2" cx="115" cy="1864.3" r="13.3"/>
+		<circle class="st2" cx="115" cy="1864.3" r="13.3"/>
+		<circle class="st0" cx="115" cy="1864.3" r="7.8"/>
+		<circle class="st2" cx="197.5" cy="1781.7" r="13.3"/>
+		<circle class="st2" cx="197.5" cy="1781.7" r="13.3"/>
+		<circle class="st0" cx="197.5" cy="1781.7" r="7.8"/>
+		<circle class="st2" cx="198.2" cy="1781.1" r="13.3"/>
+		<circle class="st2" cx="198.2" cy="1781.1" r="13.3"/>
+		<circle class="st0" cx="198.2" cy="1781.1" r="7.8"/>
+		<circle class="st2" cx="198.2" cy="1781.1" r="13.3"/>
+		<circle class="st2" cx="198.2" cy="1781.1" r="13.3"/>
+		<circle class="st0" cx="198.2" cy="1781.1" r="7.8"/>
+		<circle class="st0" cx="189.7" cy="1573.7" r="5.8"/>
+		<line class="st3" x1="114.3" y1="1581.5" x2="189.7" y2="1573.7"/>
+		
+			<ellipse transform="matrix(0.6279 -0.7783 0.7783 0.6279 -1193.1403 792.2459)" class="st0" cx="232" cy="1643.9" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="198.4" y1="1662.8" x2="229.3" y2="1645.1"/>
+		
+			<ellipse transform="matrix(0.1717 -0.9852 0.9852 0.1717 -1420.208 1639.4576)" class="st0" cx="264.8" cy="1664.3" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="232" y1="1644" x2="262.4" y2="1662.5"/>
+		<circle class="st0" cx="246.3" cy="1614" r="5.8"/>
+		<line class="st3" x1="232" y1="1649.8" x2="245" y2="1616.6"/>
+		
+			<ellipse transform="matrix(0.9983 -5.876456e-02 5.876456e-02 0.9983 -104.9108 16.8836)" class="st0" cx="234.6" cy="1792.2" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="198" y1="1779.9" x2="231.9" y2="1791"/>
+		
+			<ellipse transform="matrix(0.4133 -0.9106 0.9106 0.4133 -1640.0527 1239.7115)" class="st0" cx="142" cy="1892.6" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="115.4" y1="1864.7" x2="140.2" y2="1890.2"/>
+		<ellipse transform="matrix(0.895 -0.446 0.446 0.895 -708.972 309.5398)" class="st0" cx="303.1" cy="1660.9" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="264.8" y1="1664.2" x2="300.2" y2="1661"/>
+		
+			<ellipse transform="matrix(0.9055 -0.4244 0.4244 0.9055 -748.8519 221.3191)" class="st0" cx="122.4" cy="1791.8" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="196.7" y1="1781" x2="122.8" y2="1792.4"/>
+		<line class="st3" x1="115.2" y1="1865" x2="123" y2="1791.7"/>
+		
+			<ellipse transform="matrix(0.9982 -5.980649e-02 5.980649e-02 0.9982 -102.7485 12.174)" class="st0" cx="152" cy="1722.6" rx="5.8" ry="5.8"/>
+		<line class="st3" x1="122.3" y1="1794.9" x2="152" y2="1722.6"/>
+		<line class="st3" x1="152" y1="1722.6" x2="197.8" y2="1664.3"/>
+		<line class="st3" x1="152" y1="1722.6" x2="198.2" y2="1781.7"/>
+		<line class="st3" x1="116.6" y1="1581.2" x2="128.3" y2="1655.9"/>
+		<circle class="st0" cx="128.6" cy="1655" r="5.8"/>
+		<line class="st3" x1="196.9" y1="1663.4" x2="128.6" y2="1655"/>
+	</g>
+</g>
+<g id="Layer_4">
+	<g>
+		<image style="overflow:visible;" width="304" height="292" xlink:href="77039367.png"  transform="matrix(1 0 0 1 17 308)">
+		</image>
+		<g>
+			<rect x="134" y="408.8" class="st4" width="70" height="51.5"/>
+			<text transform="matrix(1 0 0 1 134.0003 444.817)" class="st5 st6 st7">UX</text>
+		</g>
+	</g>
+	<g>
+		<image style="overflow:visible;" width="305" height="292" xlink:href="77039365.png"  transform="matrix(1 0 0 1 1622 968)">
+		</image>
+		<g>
+			<rect x="1739.1" y="1068.9" class="st4" width="70" height="51.5"/>
+			<text transform="matrix(1 0 0 1 1739.0807 1104.892)" class="st5 st6 st7">UI</text>
+		</g>
+	</g>
+	<g>
+		<image style="overflow:visible;" width="458" height="291" xlink:href="7703936B.png"  transform="matrix(1 0 0 1 -54 1606)">
+		</image>
+		<g>
+			<rect x="63.5" y="1706.1" class="st4" width="223.2" height="51.5"/>
+			<text transform="matrix(1 0 0 1 63.5211 1742.1082)" class="st5 st6 st7">Product</text>
+		</g>
+	</g>
+</g>
+<g id="Layer_2">
+	<g id="Layer_3">
+		<g id="UX">
+			<circle class="st0" cx="2823" cy="293.9" r="17.6"/>
+			<circle class="st2" cx="2823" cy="293.9" r="24.5"/>
+			<circle class="st0" cx="2700" cy="602.9" r="17.6"/>
+			<circle class="st2" cx="2700" cy="602.9" r="24.5"/>
+			<circle class="st0" cx="2825" cy="474.9" r="17.6"/>
+			<circle class="st2" cx="2825" cy="474.9" r="24.5"/>
+			<circle class="st0" cx="2697" cy="167.9" r="17.6"/>
+			<circle class="st2" cx="2697" cy="167.9" r="24.5"/>
+			<circle class="st0" cx="2812" cy="155.9" r="9"/>
+			<line class="st3" x1="2696" y1="167.9" x2="2812" y2="155.9"/>
+			<ellipse transform="matrix(0.6279 -0.7783 0.7783 0.6279 865.1385 2337.3936)" class="st0" cx="2877" cy="263.9" rx="9" ry="9"/>
+			<line class="st3" x1="2825.3" y1="292.9" x2="2872.9" y2="265.8"/>
+			
+				<ellipse transform="matrix(0.1717 -0.9852 0.9852 0.1717 2134.2151 3128.3848)" class="st0" cx="2927.5" cy="295" rx="9" ry="9"/>
+			<line class="st3" x1="2877" y1="264" x2="2923.8" y2="292.5"/>
+			<circle class="st0" cx="2899" cy="217.9" r="9"/>
+			<line class="st3" x1="2877" y1="272.9" x2="2897" y2="221.9"/>
+			
+				<ellipse transform="matrix(0.9983 -5.876456e-02 5.876456e-02 0.9983 -23.9296 170.1556)" class="st0" cx="2881.1" cy="491.9" rx="9" ry="9"/>
+			<line class="st3" x1="2824.8" y1="473.2" x2="2876.9" y2="490.1"/>
+			
+				<ellipse transform="matrix(0.4133 -0.9106 0.9106 0.4133 1018.2285 2873.0803)" class="st0" cx="2738.7" cy="646.4" rx="9" ry="9"/>
+			<line class="st3" x1="2697.6" y1="603.5" x2="2735.8" y2="642.8"/>
+			<ellipse transform="matrix(0.895 -0.446 0.446 0.895 184.093 1362.4277)" class="st0" cx="2986.4" cy="290.1" rx="9" ry="9"/>
+			<line class="st3" x1="2927.5" y1="295" x2="2982" y2="290.2"/>
+			
+				<ellipse transform="matrix(0.9055 -0.4244 0.4244 0.9055 47.4762 1195.9834)" class="st0" cx="2708.7" cy="491.4" rx="9" ry="9"/>
+			<line class="st3" x1="2822.7" y1="474.8" x2="2709" y2="492.4"/>
+			<line class="st3" x1="2697.4" y1="604" x2="2709.4" y2="491.2"/>
+			
+				<ellipse transform="matrix(0.9982 -5.980649e-02 5.980649e-02 0.9982 -18.0885 165.3944)" class="st0" cx="2754" cy="384.9" rx="9" ry="9"/>
+			<line class="st3" x1="2708.3" y1="496.1" x2="2754" y2="384.9"/>
+			<line class="st3" x1="2754" y1="384.9" x2="2824.4" y2="295.2"/>
+			<line class="st3" x1="2754" y1="384.9" x2="2825" y2="475.9"/>
+			<line class="st3" x1="2699.5" y1="167.4" x2="2717.5" y2="282.4"/>
+			<circle class="st0" cx="2718" cy="280.9" r="9"/>
+			<line class="st3" x1="2823" y1="293.9" x2="2718" y2="280.9"/>
+		</g>
+		<g id="Layer_6">
+			<circle class="st0" cx="4336.5" cy="853.9" r="12"/>
+			<circle class="st2" cx="4336.5" cy="853.9" r="20.5"/>
+			<circle class="st2" cx="4209.5" cy="980.9" r="20.5"/>
+			<circle class="st2" cx="4209.5" cy="980.9" r="20.5"/>
+			<circle class="st0" cx="4209.5" cy="980.9" r="12"/>
+			<circle class="st2" cx="4208.5" cy="979.9" r="20.5"/>
+			<circle class="st2" cx="4208.5" cy="979.9" r="20.5"/>
+			<circle class="st0" cx="4208.5" cy="979.9" r="12"/>
+			<circle class="st2" cx="4208.5" cy="979.9" r="20.5"/>
+			<circle class="st2" cx="4208.5" cy="979.9" r="20.5"/>
+			<circle class="st0" cx="4208.5" cy="979.9" r="12"/>
+			<circle class="st2" cx="4337.5" cy="1289.9" r="20.5"/>
+			<circle class="st2" cx="4337.5" cy="1289.9" r="20.5"/>
+			<circle class="st0" cx="4337.5" cy="1289.9" r="12"/>
+			<circle class="st2" cx="4336.5" cy="1288.9" r="20.5"/>
+			<circle class="st2" cx="4336.5" cy="1288.9" r="20.5"/>
+			<circle class="st0" cx="4336.5" cy="1288.9" r="12"/>
+			<circle class="st2" cx="4336.5" cy="1288.9" r="20.5"/>
+			<circle class="st2" cx="4336.5" cy="1288.9" r="20.5"/>
+			<circle class="st0" cx="4336.5" cy="1288.9" r="12"/>
+			<circle class="st2" cx="4209.5" cy="1161.9" r="20.5"/>
+			<circle class="st2" cx="4209.5" cy="1161.9" r="20.5"/>
+			<circle class="st0" cx="4209.5" cy="1161.9" r="12"/>
+			<circle class="st2" cx="4208.5" cy="1160.9" r="20.5"/>
+			<circle class="st2" cx="4208.5" cy="1160.9" r="20.5"/>
+			<circle class="st0" cx="4208.5" cy="1160.9" r="12"/>
+			<circle class="st2" cx="4208.5" cy="1160.9" r="20.5"/>
+			<circle class="st2" cx="4208.5" cy="1160.9" r="20.5"/>
+			<circle class="st0" cx="4208.5" cy="1160.9" r="12"/>
+			<circle class="st0" cx="4221.5" cy="841.9" r="9"/>
+			<line class="st3" x1="4337.5" y1="853.9" x2="4221.5" y2="841.9"/>
+			
+				<ellipse transform="matrix(0.7783 -0.6279 0.6279 0.7783 325.1238 2820.4358)" class="st0" cx="4156.5" cy="949.8" rx="9" ry="9"/>
+			<line class="st3" x1="4208.2" y1="978.9" x2="4160.6" y2="951.8"/>
+			
+				<ellipse transform="matrix(0.9852 -0.1717 0.1717 0.9852 -107.4718 719.5899)" class="st0" cx="4106.3" cy="981.1" rx="9" ry="9"/>
+			<line class="st3" x1="4156.5" y1="950" x2="4109.7" y2="978.5"/>
+			<circle class="st0" cx="4134.5" cy="903.9" r="9"/>
+			<line class="st3" x1="4156.5" y1="958.9" x2="4136.5" y2="907.9"/>
+			
+				<ellipse transform="matrix(5.876456e-02 -0.9983 0.9983 5.876456e-02 2732.801 5253.9453)" class="st0" cx="4152.6" cy="1177.8" rx="9" ry="9"/>
+			<line class="st3" x1="4208.7" y1="1159.2" x2="4156.6" y2="1176.1"/>
+			
+				<ellipse transform="matrix(0.9106 -0.4133 0.4133 0.9106 -166.5719 1894.1915)" class="st0" cx="4295" cy="1332.1" rx="9" ry="9"/>
+			<line class="st3" x1="4335.9" y1="1289.5" x2="4297.7" y2="1328.8"/>
+			<ellipse transform="matrix(0.446 -0.895 0.895 0.446 1368.0896 4163.0073)" class="st0" cx="4046.9" cy="976.4" rx="9" ry="9"/>
+			<line class="st3" x1="4106" y1="981" x2="4051.5" y2="976.2"/>
+			
+				<ellipse transform="matrix(0.4244 -0.9055 0.9055 0.4244 1423.6547 4593.6558)" class="st0" cx="4324.9" cy="1177.1" rx="9" ry="9"/>
+			<line class="st3" x1="4210.8" y1="1160.8" x2="4324.5" y2="1178.4"/>
+			<line class="st3" x1="4336.1" y1="1290" x2="4324.1" y2="1177.2"/>
+			
+				<ellipse transform="matrix(5.980649e-02 -0.9982 0.9982 5.980649e-02 2954.52 5278.6982)" class="st0" cx="4279.5" cy="1070.9" rx="9" ry="9"/>
+			<line class="st3" x1="4325.2" y1="1182.1" x2="4279.5" y2="1070.9"/>
+			<line class="st3" x1="4279.5" y1="1070.9" x2="4209.1" y2="981.2"/>
+			<line class="st3" x1="4279.5" y1="1070.9" x2="4208.5" y2="1161.9"/>
+			<line class="st3" x1="4334" y1="853.4" x2="4316" y2="968.4"/>
+			<circle class="st0" cx="4315.5" cy="966.9" r="9"/>
+			<line class="st3" x1="4210.5" y1="979.9" x2="4315.5" y2="966.9"/>
+		</g>
+		<g id="Layer_8">
+			<circle class="st0" cx="2693" cy="1461.9" r="12"/>
+			<circle class="st2" cx="2693" cy="1461.9" r="20.5"/>
+			<circle class="st2" cx="2820" cy="1588.9" r="20.5"/>
+			<circle class="st2" cx="2820" cy="1588.9" r="20.5"/>
+			<circle class="st0" cx="2820" cy="1588.9" r="12"/>
+			<circle class="st2" cx="2821" cy="1587.9" r="20.5"/>
+			<circle class="st2" cx="2821" cy="1587.9" r="20.5"/>
+			<circle class="st0" cx="2821" cy="1587.9" r="12"/>
+			<circle class="st2" cx="2821" cy="1587.9" r="20.5"/>
+			<circle class="st2" cx="2821" cy="1587.9" r="20.5"/>
+			<circle class="st0" cx="2821" cy="1587.9" r="12"/>
+			<circle class="st2" cx="2692" cy="1897.9" r="20.5"/>
+			<circle class="st2" cx="2692" cy="1897.9" r="20.5"/>
+			<circle class="st0" cx="2692" cy="1897.9" r="12"/>
+			<circle class="st2" cx="2693" cy="1896.9" r="20.5"/>
+			<circle class="st2" cx="2693" cy="1896.9" r="20.5"/>
+			<circle class="st0" cx="2693" cy="1896.9" r="12"/>
+			<circle class="st2" cx="2693" cy="1896.9" r="20.5"/>
+			<circle class="st2" cx="2693" cy="1896.9" r="20.5"/>
+			<circle class="st0" cx="2693" cy="1896.9" r="12"/>
+			<circle class="st2" cx="2820" cy="1769.9" r="20.5"/>
+			<circle class="st2" cx="2820" cy="1769.9" r="20.5"/>
+			<circle class="st0" cx="2820" cy="1769.9" r="12"/>
+			<circle class="st2" cx="2821" cy="1768.9" r="20.5"/>
+			<circle class="st2" cx="2821" cy="1768.9" r="20.5"/>
+			<circle class="st0" cx="2821" cy="1768.9" r="12"/>
+			<circle class="st2" cx="2821" cy="1768.9" r="20.5"/>
+			<circle class="st2" cx="2821" cy="1768.9" r="20.5"/>
+			<circle class="st0" cx="2821" cy="1768.9" r="12"/>
+			<circle class="st0" cx="2808" cy="1449.9" r="9"/>
+			<line class="st3" x1="2692" y1="1461.9" x2="2808" y2="1449.9"/>
+			
+				<ellipse transform="matrix(0.6279 -0.7783 0.7783 0.6279 -143.4827 2815.7827)" class="st0" cx="2873" cy="1557.9" rx="9" ry="9"/>
+			<line class="st3" x1="2821.3" y1="1586.9" x2="2868.9" y2="1559.8"/>
+			
+				<ellipse transform="matrix(0.1717 -0.9852 0.9852 0.1717 856.1417 4196.3569)" class="st0" cx="2923.5" cy="1589.1" rx="9" ry="9"/>
+			<line class="st3" x1="2873" y1="1558" x2="2919.8" y2="1586.5"/>
+			<circle class="st0" cx="2895" cy="1511.9" r="9"/>
+			<line class="st3" x1="2873" y1="1566.9" x2="2893" y2="1515.9"/>
+			
+				<ellipse transform="matrix(0.9983 -5.876456e-02 5.876456e-02 0.9983 -99.98 172.1568)" class="st0" cx="2877.1" cy="1786" rx="9" ry="9"/>
+			<line class="st3" x1="2820.8" y1="1767.2" x2="2872.9" y2="1784.1"/>
+			
+				<ellipse transform="matrix(0.4133 -0.9106 0.9106 0.4133 -162.9761 3630.3879)" class="st0" cx="2735.8" cy="1941.7" rx="9" ry="9"/>
+			<line class="st3" x1="2693.6" y1="1897.5" x2="2731.8" y2="1936.8"/>
+			<ellipse transform="matrix(0.895 -0.446 0.446 0.895 -393.4466 1496.4779)" class="st0" cx="2982.4" cy="1584.1" rx="9" ry="9"/>
+			<line class="st3" x1="2923.5" y1="1589" x2="2978" y2="1584.2"/>
+			
+				<ellipse transform="matrix(0.9055 -0.4244 0.4244 0.9055 -502.0871 1316.5852)" class="st0" cx="2704.6" cy="1785.5" rx="9" ry="9"/>
+			<line class="st3" x1="2818.7" y1="1768.8" x2="2705" y2="1786.4"/>
+			<line class="st3" x1="2693.4" y1="1898" x2="2705.4" y2="1785.2"/>
+			
+				<ellipse transform="matrix(0.9982 -5.980649e-02 5.980649e-02 0.9982 -95.4845 167.4714)" class="st0" cx="2750" cy="1678.9" rx="9" ry="9"/>
+			<line class="st3" x1="2704.3" y1="1790.1" x2="2750" y2="1678.9"/>
+			<line class="st3" x1="2750" y1="1678.9" x2="2820.4" y2="1589.2"/>
+			<line class="st3" x1="2750" y1="1678.9" x2="2821" y2="1769.9"/>
+			<line class="st3" x1="2695.5" y1="1461.4" x2="2713.5" y2="1576.4"/>
+			<circle class="st0" cx="2714" cy="1574.9" r="9"/>
+			<line class="st3" x1="2819" y1="1587.9" x2="2714" y2="1574.9"/>
+		</g>
+		<path class="st8" d="M4425.5,1288.9h-86L4209,1161.4V981.1l130.5-127.5h86 M3019,11.9h-409h-3 M2610,602.9v144v3 M2610,8.9v3
+			v155.7 M4423,746.9H2610 M4423,1377.9V1287 M4423,745.9v1v104.9 M4423,1377.9H2606h-1 M2606,1462.8v-84.9 M2606,1947.9V1898
+			 M2608,167.6h86l130.5,127.5v180.3L2694,602.9h-86 M2604,1461.6h86l130.5,127.5v180.3L2690,1896.9h-86"/>
+	</g>
+</g>
+</svg>

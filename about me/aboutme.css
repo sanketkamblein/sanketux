@@ -2,33 +2,37 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 body {
     font-family: 'Lato', sans-serif;
-    color: #b2b2b2;
-    background: #330033;
+    color: #330033;
+    background: #b2b2b2;
     -webkit-font-smoothing: antialiased;
 }
 
+    
 a {
     text-decoration: none;
     color: #fff;
 }
 p > a:hover{
-    color: #330033;
+    color: #b2b2b2;
     text-decoration:  underline;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin:  1% 0 1% 0;
-}
 
+*{
+      margin: 0;
+      padding:  0;
+
+    }
 
 .failure{margin: 0 auto;
-    width:52%;
+    width:52vw;
     
     text-align: center;}
+
+    .failured{margin: 0 auto;
+    width:60vw;
+    
+    text-align: center;}
+
 .header {
   background-color: #f1f1f1;
   padding: 30px;
@@ -46,7 +50,8 @@ h6 {
   overflow: hidden;
 
   z-index: 1000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ border-radius: 3px;
 }
 
 #navbar a {
@@ -72,19 +77,22 @@ h6 {
   color: #330033;
 }
 
-
 .footer{
-    background-color:#b2b2b2 ;
-    height: 400px;
-    margin: auto 0;
-    position: relative;
-      padding: 100px;
-      top:100px;
+padding-top:11vw ; 
+   background-color:#150f21 ;
+  position: relative;
+  top:25vw;
+  width: 100vw;
+  height: 25vw;
+  color: yellow;
+ 
+    text-align: center;
 }
 
 
+
 .bg-img{
-   background-color:  #330033;
+   background-color:  #b2b2b2;
 
 }
 .description{
@@ -103,6 +111,7 @@ ul {
     padding:0;
     list-style: none;
 }
+
 .footer-social-icons {
     width: 350px;
     display:block;
@@ -204,7 +213,7 @@ ul.social-icons {
 
 
 .gallery {
-  width: 600px;
+  width: 60vw;
   margin: auto;
   border-radius: 3px;
   overflow: hidden;

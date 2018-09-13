@@ -9,7 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="HandheldFriendly" content="true">
 	
-	<title>UX * SANKET KAMBLE </title>
+	<title> UX * SANKET KAMBLE </title>
 	<link rel="shortcut icon" type="image/png" href="LOGOED.png" />
 	<link rel="stylesheet" href="style.css"> 
 	<style type="text/css">
@@ -40,19 +40,26 @@ p > a:hover{
 
 
 		
+*{
+			margin: 0;
+			padding:  0;
+
+		}
 		
 		.content {
 			
 			background-color:#b2b2b2;
-			content: 3000px;
-		
+			height: 230vw;
+				
 		}
 		.parallax-bg {
 			
+
 			background-image: url(background.jpg);
+
 			background-size:cover;
 			background-attachment:fixed; 
-                -webkit-transition: all 0.5s ease;
+			    -webkit-transition: all 0.5s ease;
                 -moz-transition: all 0.5s ease;
                 transition: all 0.5s ease;
 			
@@ -62,14 +69,14 @@ p > a:hover{
                 text-align: center;
                 text-transform: uppercase;
                 color: #fff;
-                font-size: 30px;
+                font-size: 1.5vw;
                 font-family: Arial;
             }
         h2{
         	text-align: center;
                 text-transform: uppercase;
                 color: #fff;
-                font-size: 70px;
+                font-size: 3vw;
                 font-family: Arial;
         }
            	.st0{fill:#330033;}
@@ -101,7 +108,7 @@ p > a:hover{
 #Product{visibility: hidden;}
 
 .failure{margin: 0 auto;
-    width:52%;
+    width:52vw;
     
     text-align: center;}
 .header {
@@ -115,7 +122,8 @@ p > a:hover{
   background-color: #330033;
   z-index: 1000;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- 
+ border-radius: 3px;
+
 }
 
 #navbar a {
@@ -129,7 +137,8 @@ p > a:hover{
   font-family: 'Arial';
   font-weight:normal;
 font-style:normal;
-  font-size: 17px;
+  font-size: 1vw;
+  
 }
 
 #navbar a:hover {
@@ -137,7 +146,6 @@ font-style:normal;
   background-color: #b2b2b2;
   
   color: black;
-
 }
 
 #navbar a.active {
@@ -152,7 +160,7 @@ font-style:normal;
 
 
   top: 0;
-  width:52%;
+  width:52vw;
     text-align: center;
   
     position: fixed;
@@ -162,7 +170,7 @@ font-style:normal;
 	 width:100%;
     text-align: center;
 	position: relative;
-	top:600px;
+	top:44.5vw;
 }
 
   .st0{fill:none;stroke:#E6E6E6;stroke-width:10;stroke-miterlimit:10;}
@@ -202,7 +210,7 @@ font-style:normal;
 
 .cropping{
    position: absolute;
-    clip: rect(0px,500px,200px,0px);
+    clip: rect(0vw,30vw,8vw,0vw);
 }
 
 
@@ -218,11 +226,15 @@ footer
 
 
 .footer{
-    background-color:#b2b2b2 ;
+	position: relative;
+	top:-25vw;
+	width: 20vw;
+	height: 0vw;
+	color: yellow;
+	background-color: black;
+	left:36vw;
  
-    position: relative;
-height: 0px;
-  top: -1000px;
+    text-align: center;
 }
 
 
@@ -336,7 +348,9 @@ ul.social-icons {
 }
 
 .projectthumb{
-	width: 70%;
+	position: relative;
+	
+	width: 65vw;
 	margin: 0 auto;
 	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  
@@ -346,23 +360,49 @@ ul.social-icons {
   box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
 }
+.my_pic{
+
+	width:32vw;
+	 height:32vw;
+	 position:relative; 
+	 left:58vw;  
+	 top:60vw;
+	  z-index: 2;
+
+}
+.hierarchy_3{
+		width:40vw; 
+		height:40vw;
+		position:relative; 
+		left:30vw;  
+		top:48vw; 
+		z-index: 1;
+}
+
+ .parallax-curtain{
+ 		z-index: 50;
+      height:229.5vw;
+      background:rgba(0,0,0,0.5);
+   
+    }
+
 
 	</style>
+
 </head>
 <body>
-	<div class="content">
 	<div class="parallax-bg">
-	
+	<div class="content parallax-bg">
+	<div id="curtain" >
 
 		<h1 id="demo" style="position:fixed;" class="readings"></h1>
-		<!--<img src="nodelink.svg" style="position:relative; left: 55px; top:1200px;" width="10%" height="10%" >
-		-->
+		
 		<div>
-			<img src="myportrait/My portrait.png" style="position:relative; left:600px;  top:750px; z-index: 2" width="400" height=400"/>
+			<img class="my_pic" src="myportrait/My portrait.png"/>
 		
 		</div>
 		
-		<img src="navline.svg"style="position:relative; left:390px;  top:650px; z-index: 1" width="500" height="500"/>
+		<img class="hierarchy_3" src="navline.svg"style="" />
 				<h1 id="demo1"  ></h1>
 		<h1 id="demo2"></h1>
 		<h1 id="demo3"></h1>
@@ -374,212 +414,201 @@ ul.social-icons {
   		<a href="about me/aboutme.html">About Me</a>
   		<a href="contact me/contactme.html">Contact</a>
 		</div>
-	
-
-
 		</div><!-- /container -->
-
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  style="position: relative; top: -190px"
-		 viewBox="0 0 1920 3200" style="enable-background:new 0 0 1920 3200 ; background-color: transparent;  " xml:space="preserve">
+		<!-- <img class="my_pic" src="UIline\newUI.svg"/> -->
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg"style="position: relative;top: 41.5vw;"
+		 viewBox="0 0 1920 2036.2" >
 
 		<g id="Layer_1_1_" class="parallax-bg">
-		
-		<rect   x="384" y="1283" class="st1" width="716" height="462" style="visibility: hidden;"/>
-		<rect  x="1153" y="1283" class="st1" width="721" height="462" style="visibility: hidden;"/>
 
-		<rect  x="60" y="1923" class="st1" width="716" height="462" style="visibility: hidden;"/>
-		<rect  x="834" y="1923" class="st1" width="721" height="462" style="visibility: hidden;"/>
-		
-		<rect  x="388" y="2578" class="st1" width="716" height="462" style="visibility: hidden;"/>
-		<rect  x="1157" y="2578" class="st1" width="721" height="462" style="visibility: hidden;"/>
-		
 		<svg  id = "snake" version="1.1">
-		<polyline id="line_navig" class="st9 path parallax-bg" style="visibility:hidden" points="471,1097 60,1097 60,1355.9 119.2,1355.9 202.8,1439.5 202.8,1557.8 119.2,1641.5 
-		60,1641.5 60,1835 1870.9,1835 1870.9,2016.7 1802.3,2016.7 1718.6,2100.4 1718.6,2218.7 1802.3,2302.4 1870.9,2302.4 1870.9,2466 
-		60.1,2466 61.2,2666.2 114.2,2666.2 197.8,2749.8 197.8,2868.2 114.2,2951.8 61.2,2951.8 61.2,3094.1 	"/>
+		<polyline id="line_navig" class="st9 path parallax-bg" style="visibility:hidden" points="470,11.9 	59,11.9 59,270.8 118.2,270.8 201.8,354.4 201.8,472.7 118.2,556.4 59,556.4 59,749.9 1869.9,749.9 1869.9,931.6 
+		1801.3,931.6 1717.6,1015.3 1717.6,1133.6 1801.3,1217.2 1869.9,1217.2 1869.9,1380.9 59.1,1380.9 60.2,1581.1 113.2,1581.1 
+		196.8,1664.7 196.8,1783.1 113.2,1866.7 60.2,1866.7 60.2,2008.9 "/>
 
 		</svg>
 		
 		<g id="UI" >
-		<circle class="st8" cx="1802" cy="2020.6" r="7.8"/>
-		<circle class="st13" cx="1802" cy="2020.6" r="13.3"/>
-		<circle class="st13" cx="1719.5" cy="2103.2" r="13.3"/>
-		<circle class="st13" cx="1719.5" cy="2103.2" r="13.3"/>
-		<circle class="st8" cx="1719.5" cy="2103.2" r="7.8"/>
-		<circle class="st13" cx="1718.8" cy="2102.5" r="13.3"/>
-		<circle class="st13" cx="1718.8" cy="2102.5" r="13.3"/>
-		<circle class="st8" cx="1718.8" cy="2102.5" r="7.8"/>
-		<circle class="st13" cx="1718.8" cy="2102.5" r="13.3"/>
-		<circle class="st13" cx="1718.8" cy="2102.5" r="13.3"/>
-		<circle class="st8" cx="1718.8" cy="2102.5" r="7.8"/>
-		<circle class="st13" cx="1802.7" cy="2304" r="13.3"/>
-		<circle class="st13" cx="1802.7" cy="2304" r="13.3"/>
-		<circle class="st8" cx="1802.7" cy="2304" r="7.8"/>
-		<circle class="st13" cx="1802" cy="2303.4" r="13.3"/>
-		<circle class="st13" cx="1802" cy="2303.4" r="13.3"/>
-		<circle class="st8" cx="1802" cy="2303.4" r="7.8"/>
-		<circle class="st13" cx="1802" cy="2303.4" r="13.3"/>
-		<circle class="st13" cx="1802" cy="2303.4" r="13.3"/>
-		<circle class="st8" cx="1802" cy="2303.4" r="7.8"/>
-		<circle class="st13" cx="1719.5" cy="2220.8" r="13.3"/>
-		<circle class="st13" cx="1719.5" cy="2220.8" r="13.3"/>
-		<circle class="st8" cx="1719.5" cy="2220.8" r="7.8"/>
-		<circle class="st13" cx="1718.8" cy="2220.2" r="13.3"/>
-		<circle class="st13" cx="1718.8" cy="2220.2" r="13.3"/>
-		<circle class="st8" cx="1718.8" cy="2220.2" r="7.8"/>
-		<circle class="st13" cx="1718.8" cy="2220.2" r="13.3"/>
-		<circle class="st13" cx="1718.8" cy="2220.2" r="13.3"/>
-		<circle class="st8" cx="1718.8" cy="2220.2" r="7.8"/>
-		<circle class="st8" cx="1727.3" cy="2012.8" r="5.8"/>
-		<line class="st14" x1="1802.7" y1="2020.6" x2="1727.3" y2="2012.8"/>
+		<circle class="st8" cx="1801" cy="935.5" r="7.8"/>
+		<circle class="st13" cx="1801" cy="935.5" r="13.3"/>
+		<circle class="st13" cx="1718.5" cy="1018.1" r="13.3"/>
+		<circle class="st13" cx="1718.5" cy="1018.1" r="13.3"/>
+		<circle class="st8" cx="1718.5" cy="1018.1" r="7.8"/>
+		<circle class="st13" cx="1717.8" cy="1017.4" r="13.3"/>
+		<circle class="st13" cx="1717.8" cy="1017.4" r="13.3"/>
+		<circle class="st8" cx="1717.8" cy="1017.4" r="7.8"/>
+		<circle class="st13" cx="1717.8" cy="1017.4" r="13.3"/>
+		<circle class="st13" cx="1717.8" cy="1017.4" r="13.3"/>
+		<circle class="st8" cx="1717.8" cy="1017.4" r="7.8"/>
+		<circle class="st13" cx="1801.7" cy="1218.9" r="13.3"/>
+		<circle class="st13" cx="1801.7" cy="1218.9" r="13.3"/>
+		<circle class="st8" cx="1801.7" cy="1218.9" r="7.8"/>
+		<circle class="st13" cx="1801" cy="1218.3" r="13.3"/>
+		<circle class="st13" cx="1801" cy="1218.3" r="13.3"/>
+		<circle class="st8" cx="1801" cy="1218.3" r="7.8"/>
+		<circle class="st13" cx="1801" cy="1218.3" r="13.3"/>
+		<circle class="st13" cx="1801" cy="1218.3" r="13.3"/>
+		<circle class="st8" cx="1801" cy="1218.3" r="7.8"/>
+		<circle class="st13" cx="1718.5" cy="1135.7" r="13.3"/>
+		<circle class="st13" cx="1718.5" cy="1135.7" r="13.3"/>
+		<circle class="st8" cx="1718.5" cy="1135.7" r="7.8"/>
+		<circle class="st13" cx="1717.8" cy="1135.1" r="13.3"/>
+		<circle class="st13" cx="1717.8" cy="1135.1" r="13.3"/>
+		<circle class="st8" cx="1717.8" cy="1135.1" r="7.8"/>
+		<circle class="st13" cx="1717.8" cy="1135.1" r="13.3"/>
+		<circle class="st13" cx="1717.8" cy="1135.1" r="13.3"/>
+		<circle class="st8" cx="1717.8" cy="1135.1" r="7.8"/>
+		<circle class="st8" cx="1726.3" cy="927.7" r="5.8"/>
+		<line class="st14" x1="1801.7" y1="935.5" x2="1726.3" y2="927.7"/>
 		
-			<ellipse transform="matrix(0.7783 -0.6279 0.6279 0.7783 -934.3239 1519.8212)" class="st8" cx="1685" cy="2083" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="1718.6" y1="2101.9" x2="1687.7" y2="2084.2"/>
+			<ellipse transform="matrix(0.7783 -0.6279 0.6279 0.7783 -253.2094 1278.621)" class="st8" cx="1684" cy="997.9" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="1717.6" y1="1016.8" x2="1686.7" y2="999.1"/>
 		
-			<ellipse transform="matrix(0.9852 -0.1717 0.1717 0.9852 -336.5917 314.9388)" class="st8" cx="1652.4" cy="2103.4" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="1685" y1="2083.1" x2="1654.6" y2="2101.6"/>
-		<circle class="st8" cx="1670.7" cy="2053.1" r="5.8"/>
-		<line class="st14" x1="1685" y1="2088.9" x2="1672" y2="2055.7"/>
+			<ellipse transform="matrix(0.9852 -0.1717 0.1717 0.9852 -150.3028 298.6541)" class="st8" cx="1651.4" cy="1018.3" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="1684" y1="998" x2="1653.6" y2="1016.5"/>
+		<circle class="st8" cx="1669.7" cy="968" r="5.8"/>
+		<line class="st14" x1="1684" y1="1003.8" x2="1671" y2="970.6"/>
 		
-			<ellipse transform="matrix(5.876456e-02 -0.9983 0.9983 5.876456e-02 -643.7327 3779.636)" class="st8" cx="1682.5" cy="2231.2" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="1719" y1="2219" x2="1685.1" y2="2230.1"/>
+			<ellipse transform="matrix(5.876456e-02 -0.9983 0.9983 5.876456e-02 438.5592 2757.2959)" class="st8" cx="1681.5" cy="1146.1" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="1718" y1="1133.9" x2="1684.1" y2="1145"/>
 		
-			<ellipse transform="matrix(0.9106 -0.4133 0.4133 0.9106 -804.905 942.0833)" class="st8" cx="1775.1" cy="2331.5" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="1801.6" y1="2303.8" x2="1776.8" y2="2329.3"/>
+			<ellipse transform="matrix(0.9106 -0.4133 0.4133 0.9106 -356.5214 844.6569)" class="st8" cx="1774.1" cy="1246.4" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="1800.6" y1="1218.7" x2="1775.8" y2="1244.2"/>
+		<ellipse transform="matrix(0.446 -0.895 0.895 0.446 -15.009 2005.8035)" class="st8" cx="1612.8" cy="1015" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="1651.2" y1="1018.2" x2="1615.8" y2="1015"/>
 		
-			<ellipse transform="matrix(0.446 -0.895 0.895 0.446 -985.6555 2607.8337)" class="st8" cx="1613.8" cy="2100.1" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="1652.2" y1="2103.3" x2="1616.8" y2="2100.1"/>
+			<ellipse transform="matrix(0.4244 -0.9055 0.9055 0.4244 -4.9067 2283.4087)" class="st8" cx="1793.5" cy="1145.6" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="1719.3" y1="1135" x2="1793.2" y2="1146.4"/>
+		<line class="st14" x1="1800.8" y1="1219" x2="1793" y2="1145.7"/>
 		
-			<ellipse transform="matrix(0.4244 -0.9055 0.9055 0.4244 -986.8741 2908.9126)" class="st8" cx="1794.5" cy="2230.7" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="1720.3" y1="2220.1" x2="1794.2" y2="2231.5"/>
-		<line class="st14" x1="1801.8" y1="2304.1" x2="1794" y2="2230.8"/>
-		
-			<ellipse transform="matrix(5.980649e-02 -0.9982 0.9982 5.980649e-02 -498.358 3794.2036)" class="st8" cx="1765" cy="2161.7" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="1794.7" y1="2234" x2="1765" y2="2161.7"/>
-		<line class="st14" x1="1765" y1="2161.7" x2="1719.2" y2="2103.4"/>
-		<line class="st14" x1="1765" y1="2161.7" x2="1718.8" y2="2220.8"/>
-		<line class="st14" x1="1800.4" y1="2020.3" x2="1788.7" y2="2095"/>
-		<circle class="st8" cx="1788.4" cy="2094.1" r="5.8"/>
-		<line class="st14" x1="1720.1" y1="2102.5" x2="1788.4" y2="2094.1"/>
+			<ellipse transform="matrix(5.980649e-02 -0.9982 0.9982 5.980649e-02 583.8677 2772.9941)" class="st8" cx="1764" cy="1076.5" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="1793.7" y1="1148.9" x2="1764" y2="1076.6"/>
+		<line class="st14" x1="1764" y1="1076.6" x2="1718.2" y2="1018.3"/>
+		<line class="st14" x1="1764" y1="1076.6" x2="1717.8" y2="1135.7"/>
+		<line class="st14" x1="1799.4" y1="935.2" x2="1787.7" y2="1009.9"/>
+		<circle class="st8" cx="1787.4" cy="1009" r="5.8"/>
+		<line class="st14" x1="1719.1" y1="1017.4" x2="1787.4" y2="1009"/>
 		</g>
 		<g  id="UX_1_">
-		<circle class="st8" cx="125" cy="1357.6" r="7.8"/>
-		<circle class="st13" cx="125" cy="1357.6" r="13.3"/>
-		<circle class="st13" cx="207.5" cy="1440.2" r="13.3"/>
-		<circle class="st13" cx="207.5" cy="1440.2" r="13.3"/>
-		<circle class="st8" cx="207.5" cy="1440.2" r="7.8"/>
-		<circle class="st13" cx="208.2" cy="1439.5" r="13.3"/>
-		<circle class="st13" cx="208.2" cy="1439.5" r="13.3"/>
-		<circle class="st8" cx="208.2" cy="1439.5" r="7.8"/>
-		<circle class="st13" cx="208.2" cy="1439.5" r="13.3"/>
-		<circle class="st13" cx="208.2" cy="1439.5" r="13.3"/>
-		<circle class="st8" cx="208.2" cy="1439.5" r="7.8"/>
-		<circle class="st13" cx="124.3" cy="1641" r="13.3"/>
-		<circle class="st13" cx="124.3" cy="1641" r="13.3"/>
-		<circle class="st8" cx="124.3" cy="1641" r="7.8"/>
-		<circle class="st13" cx="125" cy="1640.4" r="13.3"/>
-		<circle class="st13" cx="125" cy="1640.4" r="13.3"/>
-		<circle class="st8" cx="125" cy="1640.4" r="7.8"/>
-		<circle class="st13" cx="125" cy="1640.4" r="13.3"/>
-		<circle class="st13" cx="125" cy="1640.4" r="13.3"/>
-		<circle class="st8" cx="125" cy="1640.4" r="7.8"/>
-		<circle class="st13" cx="207.5" cy="1557.8" r="13.3"/>
-		<circle class="st13" cx="207.5" cy="1557.8" r="13.3"/>
-		<circle class="st8" cx="207.5" cy="1557.8" r="7.8"/>
-		<circle class="st13" cx="208.2" cy="1557.2" r="13.3"/>
-		<circle class="st13" cx="208.2" cy="1557.2" r="13.3"/>
-		<circle class="st8" cx="208.2" cy="1557.2" r="7.8"/>
-		<circle class="st13" cx="208.2" cy="1557.2" r="13.3"/>
-		<circle class="st13" cx="208.2" cy="1557.2" r="13.3"/>
-		<circle class="st8" cx="208.2" cy="1557.2" r="7.8"/>
-		<circle class="st8" cx="199.7" cy="1349.8" r="5.8"/>
-		<circle class="st8" cx="256.3" cy="1390.1" r="5.8"/>
-		<circle class="st8" cx="138.6" cy="1431.1" r="5.8"/>
+		<circle class="st8" cx="124" cy="272.5" r="7.8"/>
+		<circle class="st13" cx="124" cy="272.5" r="13.3"/>
+		<circle class="st13" cx="206.5" cy="355.1" r="13.3"/>
+		<circle class="st13" cx="206.5" cy="355.1" r="13.3"/>
+		<circle class="st8" cx="206.5" cy="355.1" r="7.8"/>
+		<circle class="st13" cx="207.2" cy="354.4" r="13.3"/>
+		<circle class="st13" cx="207.2" cy="354.4" r="13.3"/>
+		<circle class="st8" cx="207.2" cy="354.4" r="7.8"/>
+		<circle class="st13" cx="207.2" cy="354.4" r="13.3"/>
+		<circle class="st13" cx="207.2" cy="354.4" r="13.3"/>
+		<circle class="st8" cx="207.2" cy="354.4" r="7.8"/>
+		<circle class="st13" cx="123.3" cy="555.9" r="13.3"/>
+		<circle class="st13" cx="123.3" cy="555.9" r="13.3"/>
+		<circle class="st8" cx="123.3" cy="555.9" r="7.8"/>
+		<circle class="st13" cx="124" cy="555.3" r="13.3"/>
+		<circle class="st13" cx="124" cy="555.3" r="13.3"/>
+		<circle class="st8" cx="124" cy="555.3" r="7.8"/>
+		<circle class="st13" cx="124" cy="555.3" r="13.3"/>
+		<circle class="st13" cx="124" cy="555.3" r="13.3"/>
+		<circle class="st8" cx="124" cy="555.3" r="7.8"/>
+		<circle class="st13" cx="206.5" cy="472.7" r="13.3"/>
+		<circle class="st13" cx="206.5" cy="472.7" r="13.3"/>
+		<circle class="st8" cx="206.5" cy="472.7" r="7.8"/>
+		<circle class="st13" cx="207.2" cy="472.1" r="13.3"/>
+		<circle class="st13" cx="207.2" cy="472.1" r="13.3"/>
+		<circle class="st8" cx="207.2" cy="472.1" r="7.8"/>
+		<circle class="st13" cx="207.2" cy="472.1" r="13.3"/>
+		<circle class="st13" cx="207.2" cy="472.1" r="13.3"/>
+		<circle class="st8" cx="207.2" cy="472.1" r="7.8"/>
+		<circle class="st8" cx="198.7" cy="264.7" r="5.8"/>
+		<line class="st14" x1="123.3" y1="272.5" x2="198.7" y2="264.7"/>
 		
-		<ellipse transform="matrix(0.6279 -0.7783 0.7783 0.6279 -1015.1475 716.7167)" class="st8" cx="242" cy="1420" rx="5.8" ry="5.8"/>
-		<ellipse transform="matrix(0.1717 -0.9852 0.9852 0.1717 -1191.3826 1463.7743)" class="st8" cx="274.8" cy="1440.4" rx="5.8" ry="5.8"/>
-		<ellipse transform="matrix(0.9983 -5.876456e-02 5.876456e-02 0.9983 -91.7344 17.0843)" class="st8" cx="244.6" cy="1568.2" rx="5.8" ry="5.8"/>
-		<ellipse transform="matrix(0.4133 -0.9106 0.9106 0.4133 -1430.2607 1117.4456)" class="st8" cx="152" cy="1668.6" rx="5.8" ry="5.8"/>
-		<ellipse transform="matrix(0.895 -0.446 0.446 0.895 -608.0851 290.4985)" class="st8" cx="313.1" cy="1437.1" rx="5.8" ry="5.8"/>
-		<ellipse transform="matrix(0.9055 -0.4244 0.4244 0.9055 -652.8648 204.411)" class="st8" cx="132.5" cy="1567.9" rx="5.8" ry="5.8"/>
-		<ellipse transform="matrix(0.9982 -5.980649e-02 5.980649e-02 0.9982 -89.3412 12.3713)" class="st8" cx="162" cy="1498.7" rx="5.8" ry="5.8"/>
+			<ellipse transform="matrix(0.6279 -0.7783 0.7783 0.6279 -170.9839 312.1667)" class="st8" cx="241" cy="334.9" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="207.4" y1="353.8" x2="238.3" y2="336.1"/>
 		
-		<line class="st14" x1="124.3" y1="1357.6" x2="199.7" y2="1349.8"/>
-		<line class="st14" x1="208.4" y1="1438.9" x2="239.3" y2="1421.2"/>
-		<line class="st14" x1="242" y1="1420.1" x2="272.4" y2="1438.6"/>
-		<line class="st14" x1="242" y1="1425.9" x2="255" y2="1392.7"/>
-		<line class="st14" x1="208" y1="1556" x2="241.9" y2="1567.1"/>
-		<line class="st14" x1="125.4" y1="1640.8" x2="150.2" y2="1666.3"/>
-		<line class="st14" x1="274.8" y1="1440.3" x2="310.2" y2="1437.1"/>
-		<line class="st14" x1="206.7" y1="1557.1" x2="132.8" y2="1568.5"/>
-		<line class="st14" x1="125.2" y1="1641.1" x2="133" y2="1567.8"/>
-		<line class="st14" x1="132.3" y1="1571" x2="162" y2="1498.7"/>
-		<line class="st14" x1="162" y1="1498.7" x2="207.8" y2="1440.4"/>
-		<line class="st14" x1="162" y1="1498.7" x2="208.2" y2="1557.8"/>
-		<line class="st14" x1="126.6" y1="1357.3" x2="138.3" y2="1432"/>
-		<line class="st14" x1="206.9" y1="1439.5" x2="138.6" y2="1431.1"/>
+			<ellipse transform="matrix(0.1717 -0.9852 0.9852 0.1717 -123.2157 563.9852)" class="st8" cx="273.8" cy="355.3" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="241" y1="335" x2="271.4" y2="353.5"/>
+		<circle class="st8" cx="255.3" cy="305" r="5.8"/>
+		<line class="st14" x1="241" y1="340.8" x2="254" y2="307.6"/>
+		
+			<ellipse transform="matrix(0.9983 -5.876456e-02 5.876456e-02 0.9983 -27.9702 15.1503)" class="st8" cx="243.6" cy="483.1" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="207" y1="470.9" x2="240.9" y2="482"/>
+		
+			<ellipse transform="matrix(0.4133 -0.9106 0.9106 0.4133 -442.7525 479.9003)" class="st8" cx="151" cy="583.5" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="124.4" y1="555.7" x2="149.2" y2="581.2"/>
+		<ellipse transform="matrix(0.895 -0.446 0.446 0.895 -124.2176 176.145)" class="st8" cx="312.1" cy="352" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="273.8" y1="355.2" x2="309.2" y2="352"/>
+		
+			<ellipse transform="matrix(0.9055 -0.4244 0.4244 0.9055 -192.45 101.4217)" class="st8" cx="131.5" cy="482.8" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="205.7" y1="472" x2="131.8" y2="483.4"/>
+		<line class="st14" x1="124.2" y1="556" x2="132" y2="482.7"/>
+		
+			<ellipse transform="matrix(0.9982 -5.980649e-02 5.980649e-02 0.9982 -24.4465 10.3692)" class="st8" cx="161" cy="413.6" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="131.3" y1="485.9" x2="161" y2="413.6"/>
+		<line class="st14" x1="161" y1="413.6" x2="206.8" y2="355.3"/>
+		<line class="st14" x1="161" y1="413.6" x2="207.2" y2="472.7"/>
+		<line class="st14" x1="125.6" y1="272.2" x2="137.3" y2="346.9"/>
+		<circle class="st8" cx="137.6" cy="346" r="5.8"/>
+		<line class="st14" x1="205.9" y1="354.4" x2="137.6" y2="346"/>
 		</g>
 		<g  id="Product">
-		<circle class="st8" cx="116" cy="2666.6" r="7.8"/>
-		<circle class="st13" cx="116" cy="2666.6" r="13.3"/>
-		<circle class="st13" cx="198.5" cy="2749.2" r="13.3"/>
-		<circle class="st13" cx="198.5" cy="2749.2" r="13.3"/>
-		<circle class="st8" cx="198.5" cy="2749.2" r="7.8"/>
-		<circle class="st13" cx="199.2" cy="2748.5" r="13.3"/>
-		<circle class="st13" cx="199.2" cy="2748.5" r="13.3"/>
-		<circle class="st8" cx="199.2" cy="2748.5" r="7.8"/>
-		<circle class="st13" cx="199.2" cy="2748.5" r="13.3"/>
-		<circle class="st13" cx="199.2" cy="2748.5" r="13.3"/>
-		<circle class="st8" cx="199.2" cy="2748.5" r="7.8"/>
-		<circle class="st13" cx="115.3" cy="2950" r="13.3"/>
-		<circle class="st13" cx="115.3" cy="2950" r="13.3"/>
-		<circle class="st8" cx="115.3" cy="2950" r="7.8"/>
-		<circle class="st13" cx="116" cy="2949.4" r="13.3"/>
-		<circle class="st13" cx="116" cy="2949.4" r="13.3"/>
-		<circle class="st8" cx="116" cy="2949.4" r="7.8"/>
-		<circle class="st13" cx="116" cy="2949.4" r="13.3"/>
-		<circle class="st13" cx="116" cy="2949.4" r="13.3"/>
-		<circle class="st8" cx="116" cy="2949.4" r="7.8"/>
-		<circle class="st13" cx="198.5" cy="2866.8" r="13.3"/>
-		<circle class="st13" cx="198.5" cy="2866.8" r="13.3"/>
-		<circle class="st8" cx="198.5" cy="2866.8" r="7.8"/>
-		<circle class="st13" cx="199.2" cy="2866.2" r="13.3"/>
-		<circle class="st13" cx="199.2" cy="2866.2" r="13.3"/>
-		<circle class="st8" cx="199.2" cy="2866.2" r="7.8"/>
-		<circle class="st13" cx="199.2" cy="2866.2" r="13.3"/>
-		<circle class="st13" cx="199.2" cy="2866.2" r="13.3"/>
-		<circle class="st8" cx="199.2" cy="2866.2" r="7.8"/>
-		<circle class="st8" cx="190.7" cy="2658.8" r="5.8"/>
-		<line class="st14" x1="115.3" y1="2666.6" x2="190.7" y2="2658.8"/>
+		<circle class="st8" cx="115" cy="1581.5" r="7.8"/>
+		<circle class="st13" cx="115" cy="1581.5" r="13.3"/>
+		<circle class="st13" cx="197.5" cy="1664.1" r="13.3"/>
+		<circle class="st13" cx="197.5" cy="1664.1" r="13.3"/>
+		<circle class="st8" cx="197.5" cy="1664.1" r="7.8"/>
+
+		<circle class="st8" cx="60.2" cy="2008.9" r="13.3"/>
+		<circle class="st8" cx="198.2" cy="1663.4" r="7.8"/>
+		<circle class="st13" cx="198.2" cy="1663.4" r="13.3"/>
+		<circle class="st8" cx="198.2" cy="1663.4" r="7.8"/>
+		<circle class="st13" cx="114.3" cy="1864.9" r="13.3"/>
+		<circle class="st13" cx="114.3" cy="1864.9" r="13.3"/>
+		<circle class="st8" cx="114.3" cy="1864.9" r="7.8"/>
+		<circle class="st13" cx="115" cy="1864.3" r="13.3"/>
+		<circle class="st13" cx="115" cy="1864.3" r="13.3"/>
+		<circle class="st8" cx="115" cy="1864.3" r="7.8"/>
+		<circle class="st13" cx="115" cy="1864.3" r="13.3"/>
+		<circle class="st13" cx="115" cy="1864.3" r="13.3"/>
+		<circle class="st8" cx="115" cy="1864.3" r="7.8"/>
+		<circle class="st13" cx="197.5" cy="1781.7" r="13.3"/>
+		<circle class="st13" cx="197.5" cy="1781.7" r="13.3"/>
+		<circle class="st8" cx="197.5" cy="1781.7" r="7.8"/>
+		<circle class="st13" cx="198.2" cy="1781.1" r="13.3"/>
+		<circle class="st13" cx="198.2" cy="1781.1" r="13.3"/>
+		<circle class="st8" cx="198.2" cy="1781.1" r="7.8"/>
+		<circle class="st13" cx="198.2" cy="1781.1" r="13.3"/>
+		<circle class="st13" cx="198.2" cy="1781.1" r="13.3"/>
+		<circle class="st8" cx="198.2" cy="1781.1" r="7.8"/>
+		<circle class="st8" cx="189.7" cy="1573.7" r="5.8"/>
+		<line class="st14" x1="114.3" y1="1581.5" x2="189.7" y2="1573.7"/>
 		
-			<ellipse transform="matrix(0.6279 -0.7783 0.7783 0.6279 -2037.3038 1196.7958)" class="st8" cx="233" cy="2729" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="199.4" y1="2747.9" x2="230.3" y2="2730.2"/>
+			<ellipse transform="matrix(0.6279 -0.7783 0.7783 0.6279 -1193.1403 792.2459)" class="st8" cx="232" cy="1643.9" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="198.4" y1="1662.8" x2="229.3" y2="1645.1"/>
 		
-			<ellipse transform="matrix(0.1717 -0.9852 0.9852 0.1717 -2488.375 2539.2468)" class="st8" cx="265.8" cy="2749.4" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="233" y1="2729.1" x2="263.4" y2="2747.6"/>
-		<circle class="st8" cx="247.3" cy="2699.1" r="5.8"/>
-		<line class="st14" x1="233" y1="2734.9" x2="246" y2="2701.7"/>
+			<ellipse transform="matrix(0.1717 -0.9852 0.9852 0.1717 -1420.208 1639.4576)" class="st8" cx="264.8" cy="1664.3" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="232" y1="1644" x2="262.4" y2="1662.5"/>
+		<circle class="st8" cx="246.3" cy="1614" r="5.8"/>
+		<line class="st14" x1="232" y1="1649.8" x2="245" y2="1616.6"/>
 		
-			<ellipse transform="matrix(0.9983 -5.876456e-02 5.876456e-02 0.9983 -168.6749 18.8176)" class="st8" cx="235.6" cy="2877.3" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="199" y1="2865" x2="232.9" y2="2876.1"/>
+			<ellipse transform="matrix(0.9983 -5.876456e-02 5.876456e-02 0.9983 -104.9108 16.8836)" class="st8" cx="234.6" cy="1792.2" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="198" y1="1779.9" x2="231.9" y2="1791"/>
 		
-			<ellipse transform="matrix(0.4133 -0.9106 0.9106 0.4133 -2627.561 1877.2567)" class="st8" cx="143" cy="2977.7" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="116.4" y1="2949.8" x2="141.2" y2="2975.3"/>
-		<ellipse transform="matrix(0.895 -0.446 0.446 0.895 -1192.8396 423.8933)" class="st8" cx="304.1" cy="2746" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="265.8" y1="2749.3" x2="301.2" y2="2746.1"/>
+			<ellipse transform="matrix(0.4133 -0.9106 0.9106 0.4133 -1640.0527 1239.7115)" class="st8" cx="142" cy="1892.6" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="115.4" y1="1864.7" x2="140.2" y2="1890.2"/>
+		<ellipse transform="matrix(0.895 -0.446 0.446 0.895 -708.972 309.5398)" class="st8" cx="303.1" cy="1660.9" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="264.8" y1="1664.2" x2="300.2" y2="1661"/>
 		
-			<ellipse transform="matrix(0.9055 -0.4244 0.4244 0.9055 -1209.2667 324.3085)" class="st8" cx="123.4" cy="2876.9" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="197.7" y1="2866.1" x2="123.8" y2="2877.5"/>
-		<line class="st14" x1="116.2" y1="2950.1" x2="124" y2="2876.8"/>
+			<ellipse transform="matrix(0.9055 -0.4244 0.4244 0.9055 -748.8519 221.3191)" class="st8" cx="122.4" cy="1791.8" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="196.7" y1="1781" x2="122.8" y2="1792.4"/>
+		<line class="st14" x1="115.2" y1="1865" x2="123" y2="1791.7"/>
 		
-			<ellipse transform="matrix(0.9982 -5.980649e-02 5.980649e-02 0.9982 -167.6432 14.1762)" class="st8" cx="153" cy="2807.7" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="123.3" y1="2880" x2="153" y2="2807.7"/>
-		<line class="st14" x1="153" y1="2807.7" x2="198.8" y2="2749.4"/>
-		<line class="st14" x1="153" y1="2807.7" x2="199.2" y2="2866.8"/>
-		<line class="st14" x1="117.6" y1="2666.3" x2="129.3" y2="2741"/>
-		<circle class="st8" cx="129.6" cy="2740.1" r="5.8"/>
-		<line class="st14" x1="197.9" y1="2748.5" x2="129.6" y2="2740.1"/>
-		<circle class="st8" cx="61.2" cy="3094.1" r="7.8"/>
+			<ellipse transform="matrix(0.9982 -5.980649e-02 5.980649e-02 0.9982 -102.7485 12.174)" class="st8" cx="152" cy="1722.6" rx="5.8" ry="5.8"/>
+		<line class="st14" x1="122.3" y1="1794.9" x2="152" y2="1722.6"/>
+		<line class="st14" x1="152" y1="1722.6" x2="197.8" y2="1664.3"/>
+		<line class="st14" x1="152" y1="1722.6" x2="198.2" y2="1781.7"/>
+		<line class="st14" x1="116.6" y1="1581.2" x2="128.3" y2="1655.9"/>
+		<circle class="st8" cx="128.6" cy="1655" r="5.8"/>
+		<line class="st14" x1="196.9" y1="1663.4" x2="128.6" y2="1655"/>
 		</g>
 		</g>
 		<g  id="Layer_4" class="st15">
@@ -710,9 +739,7 @@ ul.social-icons {
 
 		</div>
 
-</div>
-
-				<div class="footer">
+<div class="footer">
 <div class="footer-social-icons">
     <h4 class="_14"style="font-family:'Arial';">I am available on</h4>
     <ul class="social-icons">
@@ -727,9 +754,11 @@ ul.social-icons {
 </div>
 </div>	
 
-
+</div>
+</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script> 
 <script>
 
 var changesMade = 0;
@@ -746,7 +775,7 @@ navbar.classList.add("unsticky");
 navbar.classList.remove("sticky");
 
 
-var sticky = navbar.offsetTop;
+var sticky = navbar.offsetTop/document.documentElement.scrollHeight;
 
 
 //document.getElementById("hierarchy").classList.add('downup');
@@ -773,12 +802,12 @@ var snakelength = bbox.x+ bbox.height;
    if (line.top > window.innerHeight/2){
    	  triangle.style.strokeDasharray = length;
    	  triangle.style.strokeDashoffset = length;
-   	  
+   	  	document.getElementById("curtain").classList.remove('parallax-curtain');
 
    }
    if (line.top < window.innerHeight/2) {
 
-   	
+   	document.getElementById("curtain").classList.add('parallax-curtain');
 
 if (true) 
 
@@ -800,7 +829,11 @@ var scrollpercent  = (window.innerHeight/2-line.top)/denominator;
   var draw = length * scrollpercent;
 
   //now for cropping
+  if(draw<6036)
   triangle.style.strokeDashoffset =  length-draw;
+	else
+		triangle.style.strokeDashoffset =  0;
+
   projectrect = document.getElementById("Layer_1_1_"). getElementsByClassName("st1");
   if(draw<734 && flagreverse== true)
 
@@ -837,8 +870,6 @@ var scrollpercent  = (window.innerHeight/2-line.top)/denominator;
  				document.getElementById("UX_1_").classList.add('expanding');
  				document.getElementById("UX_1_").style.visibility='visible';
  				
- 				//projectrect[0].style.visibility='visible';
- 				//projectrect[1].style.visibility='visible';
  				
  	flagreverse = true;
 				
@@ -882,8 +913,6 @@ var scrollpercent  = (window.innerHeight/2-line.top)/denominator;
  				document.getElementById("UI").classList.add('expanding');
  				document.getElementById("UI").style.visibility='visible';
  				
- 				//projectrect[2].style.visibility='visible';
- 				//projectrect[3].style.visibility='visible';
  				
  	flagreverse2 = true;
 				
@@ -929,10 +958,10 @@ var scrollpercent  = (window.innerHeight/2-line.top)/denominator;
  				document.getElementById("Product").classList.add('expanding');
  				document.getElementById("Product").style.visibility='visible';
  				
- 				//projectrect[4].style.visibility='visible';
- 				//projectrect[5].style.visibility='visible';
  				
  	flagreverse3 = true;
+
+  
 				
  } 
 
@@ -954,11 +983,13 @@ var scrollpercent  = (window.innerHeight/2-line.top)/denominator;
 		});
 
 		////////
-		  if (window.pageYOffset >= sticky && navcheck==false) {
+
+		var newheight = document.documentElement.scrollHeight;
+		  if (window.pageYOffset/newheight > sticky && navcheck==false) {
     navbar.classList.remove("unsticky");
     navbar.classList.add("sticky");
     
-  } else if(window.pageYOffset < sticky && navcheck==false)  {
+  } else if(window.pageYOffset/newheight < sticky && navcheck==false)  {
     navbar.classList.remove("sticky");
     navbar.classList.add("unsticky");
   }
@@ -967,14 +998,11 @@ var scrollpercent  = (window.innerHeight/2-line.top)/denominator;
   	navbar.classList.remove("unsticky");
     navbar.classList.add("sticky");
   }
-//document.getElementById("demo").innerHTML = window.pageYOffset+" | "+draw+" | ";
+//document.getElementById("demo").innerHTML = document.documentElement.scrollHeight+" | "+window.pageYOffset/newheight+" | ";
+
 if(comeback==false)
 
 	sessionStorage.scrollTop = $(this).scrollTop();
-
-
-
-
 
 }
 
@@ -990,8 +1018,8 @@ $(document).ready(function() {
 
 	
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="script.js"></script> 
+
+
 
 
 </body>
