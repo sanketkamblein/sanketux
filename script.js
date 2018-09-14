@@ -96,7 +96,7 @@ function onCardClick(card, i) {
 function onNextClick(i) {
 
   pronum=i;
-  // onCloseClick();
+   onCloseClick();
    currentCard = cards[i];
   
     onCardClick(currentCard,i);
