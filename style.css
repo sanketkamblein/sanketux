@@ -67,7 +67,7 @@ p {
 
 .card > img {
   z-index: 3;
-  width: 90%;
+  width: 80%;
   position: absolute;
   top: -6%;
   left: -6%;
@@ -106,12 +106,13 @@ p {
 
 .open-content img {
   position: relative;
-  width: 80%;
+  width: 60%;
   margin-left: 10%;
   margin-top: 20px;
   z-index: 5;
   top: -170vw;
   box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  left:10%;
 }
 
 .open-content .text {
@@ -119,11 +120,11 @@ p {
 
 margin-top: -185vw;
 
-padding: 20% 5% 5% 5%;
+padding: 22% 0% 6% 0%;
 
 width: 70%;
 
-margin-left:12%;
+margin-left:22%;
 
 margin-bottom: 5%;
 
