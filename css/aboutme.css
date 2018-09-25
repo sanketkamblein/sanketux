@@ -1,0 +1,88 @@
+
+.failure{margin: 0 auto;
+    width:52vw;
+    
+    text-align: center;}
+
+    .failured{margin: 0 auto;
+    width:50vw;
+    
+    text-align: center;}
+
+
+
+
+.bg-img{
+   background-color:  #b2b2b2;
+
+}
+.description{
+    position: relative;
+    margin: auto 0;
+}
+
+
+
+.gallery {
+  width: 50vw;
+  margin: auto;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.img-c {
+  width: 200px;
+  height: 200px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-w {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
+}
+
+.img-w img {
+  display: none;
+}
+
+.img-c {
+  transition: width ease 400ms, height ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+}
+
+.img-c:hover .img-w {
+  transform: scale(1.08);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+}
+
+.img-c.active1 {
+  width: 50% !important;
+  height: 50% !important;
+  position: absolute;
+  z-index: 2;
+}
+
+.img-c.postactive1 {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.img-c.active1.positioned {
+  left: 25% !important;
+  transition-delay: 50ms;
+}
+.info{
+  padding-top: 100px;
+}
+.imagescale{
+height: 300px;
+width: 300px;
+
+}

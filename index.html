@@ -1,1046 +1,244 @@
-
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+   <![endif]-->
+<!--[if IE 7]>         
+   <html class="no-js lt-ie9 lt-ie8">
+      <![endif]-->
+<!--[if IE 8]>         
+      <html class="no-js lt-ie9">
+         <![endif]-->
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sanket Kamble · UX</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/flexslider.css" type="text/css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i|Roboto:400,500,700" rel="stylesheet">
+     <link rel="icon" href="images/favicon.png" type="image/png"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png"/>
+<!--     <link href='http://fonts.googleapis.com/css?family=Esteban' rel='stylesheet' type='text/css'>
 
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="HandheldFriendly" content="true">
-	
-	<title> UX * SANKET KAMBLE </title>
-	<link rel="shortcut icon" type="image/png" href="LOGOED.png" />
-	<link rel="stylesheet" href="style.css"> 
-	<style type="text/css">
-		
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-
-
-@font-face {
-font-family: "Montserrat";
-src: url("fonts/Montserrat-Light.ttf");
-src:
-url("fonts/Montserrat.woff") format("woff"),
-url("fonts/Montserrat.otf") format("opentype"),
-url("fonts/Montserrat.svg#filename") format("svg");
-}
-
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-p > a:hover{
-    color: #330033;
-    text-decoration:  underline;
-}
-
-
-
-		
-*{
-			margin: 0;
-			padding:  0;
-
-		}
-		
-		.content {
-			
-			background-color:#b2b2b2;
-			height: 230vw;
-				
-		}
-		.parallax-bg {
-			
-
-			background-image: url(background.jpg);
-
-			background-size:cover;
-			background-attachment:fixed; 
-			    -webkit-transition: all 0.5s ease;
-                -moz-transition: all 0.5s ease;
-                transition: all 0.5s ease;
-			
-		}
-
-		.parallax-bg h1 {
-                text-align: center;
-                text-transform: uppercase;
-                color: #fff;
-                font-size: 1.5vw;
-                font-family: Arial;
-            }
-        h2{
-        	text-align: center;
-                text-transform: uppercase;
-                color: #fff;
-                font-size: 3vw;
-                font-family: Arial;
-        }
-           	.st0{fill:#330033;}
-	.st1{fill:#F2F2F2;}
-	.st2{fill:#3C6698;stroke:#797979;stroke-width:2;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#797979;stroke-width:2;stroke-miterlimit:10;}
-	.st4{fill:none;}
-	.st5{fill:#797979;}
-	.st6{font-family:'Roboto-Regular';}
-	.st7{font-size:36px;}
-	.st8{fill:#FFFFFF;}
-	.st9{fill:none;stroke:#E6E6E6;stroke-width:6;stroke-miterlimit:10;}
-	.st10{display:none;fill:none;stroke:#E6E6E6;stroke-width:6;stroke-miterlimit:10;}
-	.st11{display:none;opacity:0.39;}
-	.st12{display:inline;fill:none;stroke:#E6E6E6;stroke-width:6;stroke-miterlimit:10;}
-	.st13{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st14{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
-	.st15{display:none;}
-	.st16{display:inline;opacity:0.82;}
-	.st17{fill:url(#SVGID_1_);}
-	.st18{display:inline;}
-	.st19{fill:#E6E6E6;}
-	.st20{font-size:48px;}
-	.st21{fill:url(#SVGID_2_);}
-	.st22{fill:url(#SVGID_3_);} 
-
-#UX_1_{visibility: hidden;}
-#UI{visibility: hidden;}
-#Product{visibility: hidden;}
-
-.failure{margin: 0 auto;
-    width:52vw;
-    
-    text-align: center;}
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
-
-#navbar {
-  overflow: hidden;
-  background-color: #330033;
-  z-index: 1000;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- border-radius: 3px;
-
-}
-
-#navbar a {
-
-  float: left;
-  display: block;
-  color: #FFFF00;
-  text-align: center;
-  padding: 3% 12%;
-  text-decoration: none;
-  font-family: 'Arial';
-  font-weight:normal;
-font-style:normal;
-  font-size: 1vw;
-  
-}
-
-#navbar a:hover {
-
-  background-color: #b2b2b2;
-  
-  color: black;
-}
-
-#navbar a.active {
-  
-  background-color: #ddd;
-  color: #330033;
-}
-
-
-
-.sticky {
-
-
-  top: 0;
-  width:52vw;
-    text-align: center;
-  
-    position: fixed;
-}
-.unsticky{
-
-	 width:100%;
-    text-align: center;
-	position: relative;
-	top:44.5vw;
-}
-
-  .st0{fill:none;stroke:#E6E6E6;stroke-width:10;stroke-miterlimit:10;}
-  .readings{position: fixed;}
-
-  .expanding {
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
-  animation: dash 0.6s linear forwards ;
-}
-@keyframes dash {
-    from {
-    opacity: 0;
-  }
-
-  to {
-  	opacity: 1;
-    stroke-dashoffset: 0;
-  }
-}
-  .reversing {
-  stroke-dasharray: 100;
-  stroke-dashoffset: 0;
-  animation: dashr 0.3s linear forwards ;
-}
-@keyframes dashr {
-    from {
-    opacity: 1;
-  }
-
-  to {
-  	opacity: 0;
-    stroke-dashoffset: 100;
-  }
-}
-
-
-.cropping{
-   position: absolute;
-    clip: rect(0vw,30vw,8vw,0vw);
-}
-
-
-/*
-
-
-footer
-
-*/
-
-
-
-
-
-.footer{
-	position: relative;
-	top:-25vw;
-	width: 20vw;
-	height: 0vw;
-	color: yellow;
-	background-color: black;
-	left:36vw;
- 
-    text-align: center;
-}
-
-
-.description{
-    position: relative;
-    margin: auto 0;
-}
-
-._12 {
-    font-size: 1.2em;
-}
-._14 {
-    font-size: 1.4em;
-    color: #fff;
-}
-ul {
-    padding:0;
-    list-style: none;
-}
-.footer-social-icons {
-    width: 350px;
-    display:block;
-    margin: 0 auto;
-}
-.social-icon {
-    color: #fff;
-}
-ul.social-icons {
-    margin-top: 10px;
-}
-.social-icons li {
-    vertical-align: top;
-    display: inline;
-    height: 100px;
-}
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
-}
-.fa-linkedin {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #b2b2b2;
-}
-.fa-linkedin:hover {
-    background-color: #05cc46;
-}
-.fa-behance {
-    padding:10px 12px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #b2b2b2;
-}
-.fa-behance:hover {
-    background-color: #0057ff;
-}
-.fa-github {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #b2b2b2;
-}
-.fa-github:hover {
-    background-color: #24292e;
-}
-.fa-youtube {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #b2b2b2;
-}
-.fa-youtube:hover {
-    background-color: #e64a41;
-}
-.fa-linkedin {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #b2b2b2;
-}
-.fa-linkedin:hover {
-    background-color: #0073a4;
-}
-.fa-deviantart {
-    padding:10px 9px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #b2b2b2;
-}
-.fa-deviantart:hover {
-    background-color: #05cc46;
-}
-
-.projectthumb{
-	position: relative;
-	
-	width: 65vw;
-	margin: 0 auto;
-	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- 
-}
-.polaroid {
- 
-  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-}
-.my_pic{
-
-	width:32vw;
-	 height:32vw;
-	 position:relative; 
-	 left:58vw;  
-	 top:60vw;
-	  z-index: 2;
-
-}
-.hierarchy_3{
-		width:40vw; 
-		height:40vw;
-		position:relative; 
-		left:30vw;  
-		top:48vw; 
-		z-index: 1;
-}
-
- .parallax-curtain{
- 		z-index: 50;
-      height:229.5vw;
-      background:rgba(0,0,0,0.5);
-   
-    }
-    .intro{
-    	position: relative;
-    	top:25vw;
-    	left:28vw;
-    	color: #330033;
-    	font-family: 'Arial';
-    	width: 40vw;
-    	text-align:left: ;
-    	font-size: 2vw;
-    	background-color: white;
-    	padding: 3vw;
-    	 border-radius: 3px;
-
-
-
-    }
-
-
-	</style>
-
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800' rel='stylesheet' type='text/css'> -->
+    <!--[if lt IE 9]>
+               <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+               <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+               <![endif]-->
 </head>
+
 <body>
-	<div class="parallax-bg">
-	<div class="content parallax-bg">
-	<div id="curtain" >
-		<div class="intro">
-		<p1>Hi, This is Sanket Kamble,
-		Design graduate from Indian Institute of Science </p1>
-		</div>
-		<h1 id="demo" style="position:fixed;" class="readings"></h1>
-		
-		<div>
-			<img class="my_pic" src="myportrait/My portrait.png"/>
-		
-		</div>
-		
-		<img class="hierarchy_3" src="navline.svg"style="" />
-				<h1 id="demo1"  ></h1>
-		<h1 id="demo2"></h1>
-		<h1 id="demo3"></h1>
-		<h1 id="demo4"></h1>
-		<div class="failure">
 
- 		<div id="navbar" >
-  		<a class="active" href="javascript:void(0)">Projects</a>
-  		<a href="about me/aboutme.html">About Me</a>
-  		<a href="contact me/contactme.html">Contact</a>
-		</div>
-		</div><!-- /container -->
-		<!-- <img class="my_pic" src="UIline\newUI.svg"/> -->
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg"style="position: relative;top: 41.5vw;"
-		 viewBox="0 0 1920 2036.2" >
+    <div class='wrapper'>
 
-		<g id="Layer_1_1_" class="parallax-bg">
+        <header id="header">
+        <div class="navbar-wrap">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <div class="righ-side">
+                              <ul class="nav navbar-nav" id="top-nav-2"><li class="current"><a href="#projects" id="ux-projects">Projects</a></li>
+                                <li><a href="aboutme.html">About</a></li>                              
+                                <li><a href="Resume_SANKET KAMBLE.pdf" target="_blank">Resume</a></li>
+                              <li class="vertical-separator"></li>
+                              <li class="contact-icon email"><a href="mailto:sanketkamble@iisc.ac.in" target="_blank"><img src="images/email.png" alt="email icon"></a></li>
+                             
+                            </ul>
 
-		<svg  id = "snake" version="1.1">
-		<polyline id="line_navig" class="st9 path parallax-bg" style="visibility:hidden ; stroke:0.2vw; " points="470,11.9 	59,11.9 59,270.8 118.2,270.8 201.8,354.4 201.8,472.7 118.2,556.4 59,556.4 59,749.9 1869.9,749.9 1869.9,931.6 
-		1801.3,931.6 1717.6,1015.3 1717.6,1133.6 1801.3,1217.2 1869.9,1217.2 1869.9,1380.9 59.1,1380.9 60.2,1581.1 113.2,1581.1 
-		196.8,1664.7 196.8,1783.1 113.2,1866.7 60.2,1866.7 60.2,2008.9 "/>
+                        </div>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
 
-		</svg>
-		
-		<g id="UI" >
-		<circle class="st8" cx="1801" cy="935.5" r="7.8"/>
-		<circle class="st13" cx="1801" cy="935.5" r="13.3"/>
-		<circle class="st13" cx="1718.5" cy="1018.1" r="13.3"/>
-		<circle class="st13" cx="1718.5" cy="1018.1" r="13.3"/>
-		<circle class="st8" cx="1718.5" cy="1018.1" r="7.8"/>
-		<circle class="st13" cx="1717.8" cy="1017.4" r="13.3"/>
-		<circle class="st13" cx="1717.8" cy="1017.4" r="13.3"/>
-		<circle class="st8" cx="1717.8" cy="1017.4" r="7.8"/>
-		<circle class="st13" cx="1717.8" cy="1017.4" r="13.3"/>
-		<circle class="st13" cx="1717.8" cy="1017.4" r="13.3"/>
-		<circle class="st8" cx="1717.8" cy="1017.4" r="7.8"/>
-		<circle class="st13" cx="1801.7" cy="1218.9" r="13.3"/>
-		<circle class="st13" cx="1801.7" cy="1218.9" r="13.3"/>
-		<circle class="st8" cx="1801.7" cy="1218.9" r="7.8"/>
-		<circle class="st13" cx="1801" cy="1218.3" r="13.3"/>
-		<circle class="st13" cx="1801" cy="1218.3" r="13.3"/>
-		<circle class="st8" cx="1801" cy="1218.3" r="7.8"/>
-		<circle class="st13" cx="1801" cy="1218.3" r="13.3"/>
-		<circle class="st13" cx="1801" cy="1218.3" r="13.3"/>
-		<circle class="st8" cx="1801" cy="1218.3" r="7.8"/>
-		<circle class="st13" cx="1718.5" cy="1135.7" r="13.3"/>
-		<circle class="st13" cx="1718.5" cy="1135.7" r="13.3"/>
-		<circle class="st8" cx="1718.5" cy="1135.7" r="7.8"/>
-		<circle class="st13" cx="1717.8" cy="1135.1" r="13.3"/>
-		<circle class="st13" cx="1717.8" cy="1135.1" r="13.3"/>
-		<circle class="st8" cx="1717.8" cy="1135.1" r="7.8"/>
-		<circle class="st13" cx="1717.8" cy="1135.1" r="13.3"/>
-		<circle class="st13" cx="1717.8" cy="1135.1" r="13.3"/>
-		<circle class="st8" cx="1717.8" cy="1135.1" r="7.8"/>
-		<circle class="st8" cx="1726.3" cy="927.7" r="5.8"/>
-		<line class="st14" x1="1801.7" y1="935.5" x2="1726.3" y2="927.7"/>
-		
-			<ellipse transform="matrix(0.7783 -0.6279 0.6279 0.7783 -253.2094 1278.621)" class="st8" cx="1684" cy="997.9" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="1717.6" y1="1016.8" x2="1686.7" y2="999.1"/>
-		
-			<ellipse transform="matrix(0.9852 -0.1717 0.1717 0.9852 -150.3028 298.6541)" class="st8" cx="1651.4" cy="1018.3" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="1684" y1="998" x2="1653.6" y2="1016.5"/>
-		<circle class="st8" cx="1669.7" cy="968" r="5.8"/>
-		<line class="st14" x1="1684" y1="1003.8" x2="1671" y2="970.6"/>
-		
-			<ellipse transform="matrix(5.876456e-02 -0.9983 0.9983 5.876456e-02 438.5592 2757.2959)" class="st8" cx="1681.5" cy="1146.1" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="1718" y1="1133.9" x2="1684.1" y2="1145"/>
-		
-			<ellipse transform="matrix(0.9106 -0.4133 0.4133 0.9106 -356.5214 844.6569)" class="st8" cx="1774.1" cy="1246.4" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="1800.6" y1="1218.7" x2="1775.8" y2="1244.2"/>
-		<ellipse transform="matrix(0.446 -0.895 0.895 0.446 -15.009 2005.8035)" class="st8" cx="1612.8" cy="1015" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="1651.2" y1="1018.2" x2="1615.8" y2="1015"/>
-		
-			<ellipse transform="matrix(0.4244 -0.9055 0.9055 0.4244 -4.9067 2283.4087)" class="st8" cx="1793.5" cy="1145.6" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="1719.3" y1="1135" x2="1793.2" y2="1146.4"/>
-		<line class="st14" x1="1800.8" y1="1219" x2="1793" y2="1145.7"/>
-		
-			<ellipse transform="matrix(5.980649e-02 -0.9982 0.9982 5.980649e-02 583.8677 2772.9941)" class="st8" cx="1764" cy="1076.5" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="1793.7" y1="1148.9" x2="1764" y2="1076.6"/>
-		<line class="st14" x1="1764" y1="1076.6" x2="1718.2" y2="1018.3"/>
-		<line class="st14" x1="1764" y1="1076.6" x2="1717.8" y2="1135.7"/>
-		<line class="st14" x1="1799.4" y1="935.2" x2="1787.7" y2="1009.9"/>
-		<circle class="st8" cx="1787.4" cy="1009" r="5.8"/>
-		<line class="st14" x1="1719.1" y1="1017.4" x2="1787.4" y2="1009"/>
-		</g>
-		<g  id="UX_1_">
-		<circle class="st8" cx="124" cy="272.5" r="7.8"/>
-		<circle class="st13" cx="124" cy="272.5" r="13.3"/>
-		<circle class="st13" cx="206.5" cy="355.1" r="13.3"/>
-		<circle class="st13" cx="206.5" cy="355.1" r="13.3"/>
-		<circle class="st8" cx="206.5" cy="355.1" r="7.8"/>
-		<circle class="st13" cx="207.2" cy="354.4" r="13.3"/>
-		<circle class="st13" cx="207.2" cy="354.4" r="13.3"/>
-		<circle class="st8" cx="207.2" cy="354.4" r="7.8"/>
-		<circle class="st13" cx="207.2" cy="354.4" r="13.3"/>
-		<circle class="st13" cx="207.2" cy="354.4" r="13.3"/>
-		<circle class="st8" cx="207.2" cy="354.4" r="7.8"/>
-		<circle class="st13" cx="123.3" cy="555.9" r="13.3"/>
-		<circle class="st13" cx="123.3" cy="555.9" r="13.3"/>
-		<circle class="st8" cx="123.3" cy="555.9" r="7.8"/>
-		<circle class="st13" cx="124" cy="555.3" r="13.3"/>
-		<circle class="st13" cx="124" cy="555.3" r="13.3"/>
-		<circle class="st8" cx="124" cy="555.3" r="7.8"/>
-		<circle class="st13" cx="124" cy="555.3" r="13.3"/>
-		<circle class="st13" cx="124" cy="555.3" r="13.3"/>
-		<circle class="st8" cx="124" cy="555.3" r="7.8"/>
-		<circle class="st13" cx="206.5" cy="472.7" r="13.3"/>
-		<circle class="st13" cx="206.5" cy="472.7" r="13.3"/>
-		<circle class="st8" cx="206.5" cy="472.7" r="7.8"/>
-		<circle class="st13" cx="207.2" cy="472.1" r="13.3"/>
-		<circle class="st13" cx="207.2" cy="472.1" r="13.3"/>
-		<circle class="st8" cx="207.2" cy="472.1" r="7.8"/>
-		<circle class="st13" cx="207.2" cy="472.1" r="13.3"/>
-		<circle class="st13" cx="207.2" cy="472.1" r="13.3"/>
-		<circle class="st8" cx="207.2" cy="472.1" r="7.8"/>
-		<circle class="st8" cx="198.7" cy="264.7" r="5.8"/>
-		<line class="st14" x1="123.3" y1="272.5" x2="198.7" y2="264.7"/>
-		
-			<ellipse transform="matrix(0.6279 -0.7783 0.7783 0.6279 -170.9839 312.1667)" class="st8" cx="241" cy="334.9" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="207.4" y1="353.8" x2="238.3" y2="336.1"/>
-		
-			<ellipse transform="matrix(0.1717 -0.9852 0.9852 0.1717 -123.2157 563.9852)" class="st8" cx="273.8" cy="355.3" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="241" y1="335" x2="271.4" y2="353.5"/>
-		<circle class="st8" cx="255.3" cy="305" r="5.8"/>
-		<line class="st14" x1="241" y1="340.8" x2="254" y2="307.6"/>
-		
-			<ellipse transform="matrix(0.9983 -5.876456e-02 5.876456e-02 0.9983 -27.9702 15.1503)" class="st8" cx="243.6" cy="483.1" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="207" y1="470.9" x2="240.9" y2="482"/>
-		
-			<ellipse transform="matrix(0.4133 -0.9106 0.9106 0.4133 -442.7525 479.9003)" class="st8" cx="151" cy="583.5" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="124.4" y1="555.7" x2="149.2" y2="581.2"/>
-		<ellipse transform="matrix(0.895 -0.446 0.446 0.895 -124.2176 176.145)" class="st8" cx="312.1" cy="352" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="273.8" y1="355.2" x2="309.2" y2="352"/>
-		
-			<ellipse transform="matrix(0.9055 -0.4244 0.4244 0.9055 -192.45 101.4217)" class="st8" cx="131.5" cy="482.8" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="205.7" y1="472" x2="131.8" y2="483.4"/>
-		<line class="st14" x1="124.2" y1="556" x2="132" y2="482.7"/>
-		
-			<ellipse transform="matrix(0.9982 -5.980649e-02 5.980649e-02 0.9982 -24.4465 10.3692)" class="st8" cx="161" cy="413.6" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="131.3" y1="485.9" x2="161" y2="413.6"/>
-		<line class="st14" x1="161" y1="413.6" x2="206.8" y2="355.3"/>
-		<line class="st14" x1="161" y1="413.6" x2="207.2" y2="472.7"/>
-		<line class="st14" x1="125.6" y1="272.2" x2="137.3" y2="346.9"/>
-		<circle class="st8" cx="137.6" cy="346" r="5.8"/>
-		<line class="st14" x1="205.9" y1="354.4" x2="137.6" y2="346"/>
-		</g>
-		<g  id="Product">
-		<circle class="st8" cx="115" cy="1581.5" r="7.8"/>
-		<circle class="st13" cx="115" cy="1581.5" r="13.3"/>
-		<circle class="st13" cx="197.5" cy="1664.1" r="13.3"/>
-		<circle class="st13" cx="197.5" cy="1664.1" r="13.3"/>
-		<circle class="st8" cx="197.5" cy="1664.1" r="7.8"/>
+</header>
 
-		<circle class="st8" cx="60.2" cy="2008.9" r="13.3"/>
-		<circle class="st8" cx="198.2" cy="1663.4" r="7.8"/>
-		<circle class="st13" cx="198.2" cy="1663.4" r="13.3"/>
-		<circle class="st8" cx="198.2" cy="1663.4" r="7.8"/>
-		<circle class="st13" cx="114.3" cy="1864.9" r="13.3"/>
-		<circle class="st13" cx="114.3" cy="1864.9" r="13.3"/>
-		<circle class="st8" cx="114.3" cy="1864.9" r="7.8"/>
-		<circle class="st13" cx="115" cy="1864.3" r="13.3"/>
-		<circle class="st13" cx="115" cy="1864.3" r="13.3"/>
-		<circle class="st8" cx="115" cy="1864.3" r="7.8"/>
-		<circle class="st13" cx="115" cy="1864.3" r="13.3"/>
-		<circle class="st13" cx="115" cy="1864.3" r="13.3"/>
-		<circle class="st8" cx="115" cy="1864.3" r="7.8"/>
-		<circle class="st13" cx="197.5" cy="1781.7" r="13.3"/>
-		<circle class="st13" cx="197.5" cy="1781.7" r="13.3"/>
-		<circle class="st8" cx="197.5" cy="1781.7" r="7.8"/>
-		<circle class="st13" cx="198.2" cy="1781.1" r="13.3"/>
-		<circle class="st13" cx="198.2" cy="1781.1" r="13.3"/>
-		<circle class="st8" cx="198.2" cy="1781.1" r="7.8"/>
-		<circle class="st13" cx="198.2" cy="1781.1" r="13.3"/>
-		<circle class="st13" cx="198.2" cy="1781.1" r="13.3"/>
-		<circle class="st8" cx="198.2" cy="1781.1" r="7.8"/>
-		<circle class="st8" cx="189.7" cy="1573.7" r="5.8"/>
-		<line class="st14" x1="114.3" y1="1581.5" x2="189.7" y2="1573.7"/>
-		
-			<ellipse transform="matrix(0.6279 -0.7783 0.7783 0.6279 -1193.1403 792.2459)" class="st8" cx="232" cy="1643.9" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="198.4" y1="1662.8" x2="229.3" y2="1645.1"/>
-		
-			<ellipse transform="matrix(0.1717 -0.9852 0.9852 0.1717 -1420.208 1639.4576)" class="st8" cx="264.8" cy="1664.3" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="232" y1="1644" x2="262.4" y2="1662.5"/>
-		<circle class="st8" cx="246.3" cy="1614" r="5.8"/>
-		<line class="st14" x1="232" y1="1649.8" x2="245" y2="1616.6"/>
-		
-			<ellipse transform="matrix(0.9983 -5.876456e-02 5.876456e-02 0.9983 -104.9108 16.8836)" class="st8" cx="234.6" cy="1792.2" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="198" y1="1779.9" x2="231.9" y2="1791"/>
-		
-			<ellipse transform="matrix(0.4133 -0.9106 0.9106 0.4133 -1640.0527 1239.7115)" class="st8" cx="142" cy="1892.6" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="115.4" y1="1864.7" x2="140.2" y2="1890.2"/>
-		<ellipse transform="matrix(0.895 -0.446 0.446 0.895 -708.972 309.5398)" class="st8" cx="303.1" cy="1660.9" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="264.8" y1="1664.2" x2="300.2" y2="1661"/>
-		
-			<ellipse transform="matrix(0.9055 -0.4244 0.4244 0.9055 -748.8519 221.3191)" class="st8" cx="122.4" cy="1791.8" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="196.7" y1="1781" x2="122.8" y2="1792.4"/>
-		<line class="st14" x1="115.2" y1="1865" x2="123" y2="1791.7"/>
-		
-			<ellipse transform="matrix(0.9982 -5.980649e-02 5.980649e-02 0.9982 -102.7485 12.174)" class="st8" cx="152" cy="1722.6" rx="5.8" ry="5.8"/>
-		<line class="st14" x1="122.3" y1="1794.9" x2="152" y2="1722.6"/>
-		<line class="st14" x1="152" y1="1722.6" x2="197.8" y2="1664.3"/>
-		<line class="st14" x1="152" y1="1722.6" x2="198.2" y2="1781.7"/>
-		<line class="st14" x1="116.6" y1="1581.2" x2="128.3" y2="1655.9"/>
-		<circle class="st8" cx="128.6" cy="1655" r="5.8"/>
-		<line class="st14" x1="196.9" y1="1663.4" x2="128.6" y2="1655"/>
-		</g>
-		</g>
-		<g  id="Layer_4" class="st15">
-		<g class="st16">
-		<image style="overflow:visible;" width="1158" height="1151" xlink:href="CB2435D.png"  transform="matrix(1 0 0 1 -407 968)">
-		</image>
-		<g>
-			
-				<radialGradient id="SVGID_1_" cx="149.6517" cy="1525.4917" r="98.4288" gradientTransform="matrix(1.1813 0 0 1.5936 -4.7869 -917.1152)" gradientUnits="userSpaceOnUse">
-				<stop  offset="0" style="stop-color:#330033"/>
-				<stop  offset="0.4307" style="stop-color:#330033"/>
-				<stop  offset="0.5821" style="stop-color:#2B002B;stop-opacity:0.734"/>
-				<stop  offset="0.8133" style="stop-color:#160016;stop-opacity:0.328"/>
-				<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
-			</radialGradient>
-			<ellipse class="st17" cx="172" cy="1513.9" rx="146.2" ry="143"/>
-		</g>
-		</g>
-		<g class="st18">
-		<image style="overflow:visible;" width="304" height="292" xlink:href="CB2435F.png"  transform="matrix(1 0 0 1 18 1393)">
-		</image>
-		<g>
-			
-			<text transform="matrix(1 0 0 1 135 1529.9249)" class="st19 st6 st20">UX</text>
-		</g>
-		</g>
-		<g class="st16">
-		
-			<image style="overflow:visible;" width="1158" height="1151" xlink:href="CB2435B.png"  transform="matrix(1 0 0 1 1188.2789 1624.5269)">
-		</image>
-		<g>
-			
-				<radialGradient id="SVGID_2_" cx="1500.0692" cy="1817.6064" r="98.4288" gradientTransform="matrix(1.1813 0 0 1.5936 -4.7869 -726.1064)" gradientUnits="userSpaceOnUse">
-				<stop  offset="0" style="stop-color:#330033"/>
-				<stop  offset="0.4307" style="stop-color:#330033"/>
-				<stop  offset="0.5821" style="stop-color:#2B002B;stop-opacity:0.734"/>
-				<stop  offset="0.8133" style="stop-color:#160016;stop-opacity:0.328"/>
-				<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
-			</radialGradient>
-			<ellipse class="st21" cx="1767.3" cy="2170.5" rx="146.2" ry="143"/>
-		</g>
-			</g>
-			<g class="st18">
-		<image style="overflow:visible;" width="305" height="292" xlink:href="CB24354.png"  transform="matrix(1 0 0 1 1623 2053)">
-		</image>
-		<g>
-			<rect x="1740.1" y="2154" class="st4" width="70" height="51.5"/>
-			<text transform="matrix(1 0 0 1 1740.0804 2190)" class="st19 st6 st20">UI</text>
-		</g>
-		</g>
-		<g class="st16">
-		
-			<image style="overflow:visible;" width="1157" height="1151" xlink:href="CB24349.png"  transform="matrix(1 0 0 1 -426.2388 2262.2161)">
-		</image>
-		<g>
-			
-				<radialGradient id="SVGID_3_" cx="132.7555" cy="2101.1289" r="98.4288" gradientTransform="matrix(1.1813 0 0 1.5936 -4.7869 -540.7159)" gradientUnits="userSpaceOnUse">
-				<stop  offset="0" style="stop-color:#330033"/>
-				<stop  offset="0.4307" style="stop-color:#330033"/>
-				<stop  offset="0.5821" style="stop-color:#2B002B;stop-opacity:0.734"/>
-				<stop  offset="0.8133" style="stop-color:#160016;stop-opacity:0.328"/>
-				<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
-			</radialGradient>
-			<ellipse class="st22" cx="152" cy="2807.7" rx="146.2" ry="143"/>
-		</g>
-		</g>
-		<g class="st18">
-		<image style="overflow:visible;" width="458" height="291" xlink:href="CB2434A.png"  transform="matrix(1 0 0 1 -53 2691)">
-		</image>
-		</g>
-		</svg>
+        <div id="intro">
+            <div class="container space">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <h1>Hi there, I'm Kamble Sanket.</h1>
+                        <p class="lead" style="margin-bottom:16px">I am a recent design graduate from Indian Institute of Science. I have interned in some labs in IISc M2D2 lab, SID-IISc and a startup DailyGate Informix. Due to having thesis in Industrial IoT area and design internships in UX area I am interested in choreographing User Experience with my prototyping skills. <a href="https://itunes.apple.com/cn/podcast/ux-coffee-she-ji-ka/id1099551615" target="_blank"></a></p> 
+                        <p class="learn-more"><a href="#" id="point-to-first-project">See projects</a>
+                        <img src="images/down-arrow.png" style="width:20px">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-<div class="projectthumb">
-		<div class="card-column column-0" >
-    	<div class="card card-color-0">
-      	<div class="border"></div>
-      
-      	<img src="mymic port.jpg"  class="cropping"/>
-      
-      	<h1>Mimyk</h1>
-    	</div>
-    	<div class="card card-color-0">
-      	<div class="border" ></div>
-      	<img src="LegalPad.jpg" class="cropping" />
-      	<h1>LegalPad</h1>
-    	</div>
-  		</div>
-  		<div class="card-column column-1">
-  		  <div class="card card-color-0">
-      	<div class="border"></div>
-      	<img src="sleep app.jpg" class="cropping" />
-      	<h1>nAPP</h1>
-    	</div>
-    	<div class="card card-color-0">
-      	<div class="border"></div>
-      	<img src="CAR APP.jpg" class="cropping" />
-      	<h1>Car_App</h1>
-    	</div>
- 		 </div>
-
- 		 <div class="card-column column-2">
-  		  <div class="card card-color-0">
-      	<div class="border"></div>
-      	<img src="Ergocheck.jpg" class="cropping" />
-      	<h1>Ergocheck</h1>
-    	</div>
-    	<div class="card card-color-0">
-      	<div class="border"></div>
-      	<img src="DailyGate.jpg" class="cropping" />
-      	<h1>DailyGate</h1>
-    	</div>
- 		 </div>	
-</div>
-
-  		<div id="cover" class="cover"></div>
-
-		<div id="open-content" class="open-content">
-  			<a href="index.html" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
-		  <div href="index.html" id="next-content" class="next-content" style="position: fixed ; left: 95%; top: 500px;font-family: 'Arial' "><h3><a href="#">Next</a></h3></div>
-		    <div href="index.html" id="prev-content" class="prev-content" style="position: fixed ;left: 10px; top: 500px; font-family: 'Arial' "><h3 ><a href="#">Previous</a></h3></div>
-  		<img id="open-content-image" src="" />
-
-  		<div class="text" id="open-content-text">
-  		</div>
-
-
-
-		</div>
-
-<div class="footer">
-<div class="footer-social-icons">
-    <h4 class="_14"style="font-family:'Arial';">I am available on</h4>
-    <ul class="social-icons">
-        <li><a href="https://www.linkedin.com/in/kamble-sanket-a5997a7b/" class="social-icon" target="_blank"> <i class="fa fa-linkedin"></i></a></li>
-        <li><a href="https://www.behance.net/psycho5" class="social-icon" target="_blank"> <i class="fa fa-behance"></i></a></li>
-        <li><a href="https://github.com/psycho360" class="social-icon" target="_blank"> <i  class="fa fa-github"></i></a></li>
-        <li><a href="https://www.deviantart.com/psycho36" class="social-icon" target="_blank"> <i class="fa fa-deviantart"></i></a></li>
-        <li><a href="https://www.youtube.com/channel/UCU3Z5PgSzoP3Y4PdZBYXjLw?view_as=subscriber" class="social-icon" target="_blank"> <i class="fa fa-youtube"></i></a></li>
-        <li><a href="https://www.ratemydrawings.com/user/psycho36/" class="social-icon" target="_blank"> <i class="fa fa-ratemydrawings"></i></a></li>
         
-    </ul>
-</div>
-</div>	
+        <div id="projects">
+            <div class="project-bg-1">
+                <div class="container">
+                    <div class="project-item row">
+                        <div class="left-wrapper col-sm-7">
+                            <div class="text-wrapper">
+                                <div class="project-title">Mimyk - Endoscopy Simulation</div>
+                                <div class="project-description">I worked on for the Information Architecture for the service by their product. The product has 3d interface for which I had to make UI and also the controlling configuration for the Desktop app.</div>
+                                <div class="learn-more">
+                                    <a href="mimyk.html" >Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-wrapper col-sm-5">
+                            <img src="images/Mimyk.png" alt="Mimyk">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-bg-2">
+                <div class="container">
+                    <div class="project-item row fadeInBlock">
+                        <div class="left-wrapper col-sm-7">
+                            <div class="text-wrapper">
+                                <div class="project-title">nAPP - Assistive App to schedule sleep</div>
+                                <div class="project-description">I did the user research and also the concept design for the mobile app which required many interaction ideas.</div>
+<!--                                 <div class="learn-more">
+                                    <a href="ka-mobile.php">Learn more (password protected)</a>
+                                </div>
+                                <div class="request-password">
+                                    <a href="#">Request password</a>
+                                </div> -->
+                                <div class="learn-more">
+                                    <a href="sleepapp.html" >Learn more</a></br>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-wrapper col-sm-5">
+                            <img src="images/nAPP.png" alt="nAPP">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-bg-3">
+                <div class="container">
+                    <div class="project-item row fadeInBlock">
+                        <div class="left-wrapper col-sm-7">
+                            <div class="text-wrapper">
+                                <div class="project-title">LegalPad - Digital Diary for Lawyers</div>
+                                <div class="project-description">Though it is my Bachelor's thesis, I had gone through whole product design process to come up with working prototype for Android Tablets</div>
+                                <div class="learn-more">
+                                    <a href="legalpad.html" >Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-wrapper col-sm-5">
+                            <img src="images/LegalPad.png" alt="LegalPad">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-bg-4">
+                <div class="container">
+                    <div class="project-item row fadeInBlock">
+                        <div class="left-wrapper col-sm-7">
+                            <div class="text-wrapper">
+                                <div class="project-title">Folio - A Concept for Designer</div>
+                                <div class="project-description">That's my experimental project during my Master's, where I have used a creative approach to make a portfolio site for any person who wants to market him/her.</div>
+                                <div class="learn-more">
+                                    <a href="folio.html">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-wrapper col-sm-5">
+                            <img src="images/projects/project-04.png" alt="folio">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="project-bg-5">
+                <div class="container">
+                    <div class="project-item row fadeInBlock">
+                        <div class="left-wrapper col-sm-7">
+                            <div class="text-wrapper">
+                                <div class="project-title">Some academic projects</div>
+                                <div class="project-description">My academic projects include holistic way of design that includes deep analysis and research for design</div>
+                                <div class="learn-more">
+                                    <a href="">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-wrapper col-sm-5">
+                            <img src="images/projects/project-05.png" alt="acads">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+
+
+
+    </div>
+    <!-- end: Wrapper  -->
+
+        <!-- Js Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.easing-1.3.pack.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.bootstrap-autohidingnavbar.js"></script>
+    <script src="js/t-one.js"></script>   <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30961274-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script></body>
 
-</div>
-</div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="script.js"></script> 
-<script>
-
-var changesMade = 0;
-var triangle1 = document.getElementById("line_navig");
-var snake1 = document.getElementsByTagName("svg")[1];
-var line1 = triangle1.getBoundingClientRect();
-var denominator = line1.bottom - line1.top;
-var flagreverse= false;
-var flagreverse3= false;
-var flagreverse2= false;
-
-var navbar = document.getElementById("navbar");
-navbar.classList.add("unsticky");
-navbar.classList.remove("sticky");
-
-
-var sticky = navbar.offsetTop/document.documentElement.scrollHeight;
-
-
-//document.getElementById("hierarchy").classList.add('downup');
-var projectrect;
-window.onscroll = function(){
-
-var triangle = document.getElementById("line_navig"); triangle.style.visibility="visible";
-var snake = document.getElementsByTagName("svg")[1];
-var line = triangle.getBoundingClientRect();
-var length = 0;
-var prevPos;
-var bbox = snake.getBBox();
-var snakelength = bbox.x+ bbox.height;
-
-    for (var i = 0 ; i < triangle.points.numberOfItems;i++) {
-    var pos = triangle.points.getItem(i);
-    if (i > 0) {
-        length += Math.sqrt(Math.pow((pos.x - prevPos.x), 2) + Math.pow((pos.y - prevPos.y), 2));
-    }
-    prevPos = pos;
-	}
-
-
-   if (line.top > window.innerHeight/2){
-   	  triangle.style.strokeDasharray = length;
-   	  triangle.style.strokeDashoffset = length;
-   	  	document.getElementById("curtain").classList.remove('parallax-curtain');
-
-   }
-   if (line.top < window.innerHeight/2) {
-
-   	document.getElementById("curtain").classList.add('parallax-curtain');
-
-if (true) 
-
-    {
-   
-
-
-
-//document.getElementById("demo").innerHTML = length;
-// The start position of the drawing
-triangle.style.strokeDasharray = length;
-
-// Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
-triangle.style.strokeDashoffset = length;
-
-// Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
-var scrollpercent  = (window.innerHeight/2-line.top)/denominator;
-
-  var draw = length * scrollpercent;
-
-  //now for cropping
-  if(draw<6036)
-  triangle.style.strokeDashoffset =  length-draw;
-	else
-		triangle.style.strokeDashoffset =  0;
-
-  projectrect = document.getElementById("Layer_1_1_"). getElementsByClassName("st1");
-  if(draw<734 && flagreverse== true)
-
- {
-
- 				
- 				document.getElementById("UX_1_").classList.remove('expanding');
- 				document.getElementById("UX_1_").classList.remove('reversing');
- 				document.getElementById("UX_1_").classList.add('reversing');
- 				flagreverse=false;
- 					var divsToHide = document.getElementById("UX_1_").getElementsByClassName("st8");
-
-    for(var i = 0; i < 20; i++)
-    {
-    divsToHide[i].style.visibility="hidden";
-    }
-    			 
-
- }
-
-
-   if(draw>=734 && flagreverse== false)
- {
-
- 					document.getElementById("UX_1_").classList.remove('expanding');
- 				document.getElementById("UX_1_").classList.remove('reversing');
- 				var divsToHide = document.getElementById("UX_1_").getElementsByClassName("st8");
-
-    for(var i = 0; i < 20; i++)
-    {
-    divsToHide[i].style.visibility="visible";
-    }
- 				//document.getElementById("UX_1_").classList.add('fadeIn');
- 				document.getElementById("UX_1_").classList.add('expanding');
- 				document.getElementById("UX_1_").style.visibility='visible';
- 				
- 				
- 	flagreverse = true;
-				
- } 
-///////////////////////////////////////////////////
-//for second
-///////////////////////////////////
-
-  if(draw<3399 && flagreverse2== true)
-
- {
-
- 				
- 				document.getElementById("UI").classList.remove('expanding');
- 				document.getElementById("UI").classList.remove('reversing');
- 				document.getElementById("UI").classList.add('reversing');
- 				flagreverse2=false;
- 					var divsToHide = document.getElementById("UI").getElementsByClassName("st8");
-
-    for(var i = 0; i < 20; i++)
-    {
-    divsToHide[i].style.visibility="hidden";
-    }
-    			 
-
- }
-
-
-   if(draw>=3399 && flagreverse2== false)
- {
-
- 					document.getElementById("UI").classList.remove('expanding');
- 				document.getElementById("UI").classList.remove('reversing');
- 				var divsToHide = document.getElementById("UI").getElementsByClassName("st8");
-
-    for(var i = 0; i < 20; i++)
-    {
-    divsToHide[i].style.visibility="visible";
-    }
- 				//document.getElementById("UX_1_").classList.add('fadeIn');
- 				document.getElementById("UI").classList.add('expanding');
- 				document.getElementById("UI").style.visibility='visible';
- 				
- 				
- 	flagreverse2 = true;
-				
- } 
-
-///////////////////////
-/// for third
-//////////////////////
-
-	
-  if(draw<6036 && flagreverse3== true)
-
- {
-
- 				
- 				document.getElementById("Product").classList.remove('expanding');
- 				document.getElementById("Product").classList.remove('reversing');
- 				document.getElementById("Product").classList.add('reversing');
- 				flagreverse3=false;
- 					var divsToHide = document.getElementById("Product").getElementsByClassName("st8");
-
-    for(var i = 0; i < 20; i++)
-    {
-    divsToHide[i].style.visibility="hidden";
-    }
-    			 
-
- }
-
-
-   if(draw>=6036 && flagreverse3== false)
- {
-
- 					document.getElementById("Product").classList.remove('expanding');
- 				document.getElementById("Product").classList.remove('reversing');
- 				var divsToHide = document.getElementById("Product").getElementsByClassName("st8");
-
-    for(var i = 0; i < 20; i++)
-    {
-    divsToHide[i].style.visibility="visible";
-    }
- 				//document.getElementById("UX_1_").classList.add('fadeIn');
- 				document.getElementById("Product").classList.add('expanding');
- 				document.getElementById("Product").style.visibility='visible';
- 				
- 				
- 	flagreverse3 = true;
-
-  
-				
- } 
-
-
-
- //////////////////////////////////////////////
-    } 
-    
-    }
-   
-
-////// parallax scrolling background
-	var documentEl = $(document),
-		parallaxBg = $('div.parallax-bg')		// body...
-		documentEl.on('scroll', function(){
-				var currScrollPos = documentEl.scrollTop();
-				parallaxBg.css('background-position','0' + -currScrollPos/50 + 'px');
-
-		});
-
-		////////
-
-		var newheight = document.documentElement.scrollHeight;
-		  if (window.pageYOffset/newheight > sticky && navcheck==false) {
-    navbar.classList.remove("unsticky");
-    navbar.classList.add("sticky");
-    
-  } else if(window.pageYOffset/newheight < sticky && navcheck==false)  {
-    navbar.classList.remove("sticky");
-    navbar.classList.add("unsticky");
-  }
-  else if( navcheck== true)
-  {
-  	navbar.classList.remove("unsticky");
-    navbar.classList.add("sticky");
-  }
-//document.getElementById("demo").innerHTML = document.documentElement.scrollHeight+" | "+window.pageYOffset/newheight+" | ";
-
-if(comeback==false)
-
-	sessionStorage.scrollTop = $(this).scrollTop();
-
-}
-
-
-
-
-$(document).ready(function() {
-	
-  if (sessionStorage.scrollTop != "undefined") {
-    $(window).scrollTop(sessionStorage.scrollTop);
-  }
-});
-
-	
-</script>
-
-
-
-
-</body>
 </html>
-
