@@ -2340,7 +2340,7 @@ ul.dashed li{ text-indent:-5px; }
 
     .project-item .text-wrapper {
         margin-top: 230px;
-        cursor: pointer;
+        /*! cursor: pointer; */
         // opacity: 0.95;
         
     }
